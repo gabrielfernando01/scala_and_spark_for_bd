@@ -1,3 +1,3 @@
-![](https://raw.githubusercontent.com/gabrielfernando01/spark_and_scala_for_bd/main/images/cover.jpg)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/cover.jpg)
 
 # Scala and spark for BigData
