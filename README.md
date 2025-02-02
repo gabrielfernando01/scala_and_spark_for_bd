@@ -7,7 +7,7 @@
 Before starting, I share with you that the configuration I am going to use is:
 
 - Java 17.0.13
-- Scala 2.13
+- Scala 2.13.14
 - Spark 3.5.1
 
 ### Installing Java ☕
@@ -63,7 +63,7 @@ OpenJDK Runtime Environment (build 17.0.13+11-Ubuntu-2ubuntu124.04)
 
  Before starting, let's check to make sure Scala is installed properly.
  
- <code>$scala -version</code>
+ <code>$ scala -version</code>
  
 If Scala is already installed on your system, you should get the following message on your terminal:
 
