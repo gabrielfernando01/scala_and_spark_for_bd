@@ -2,7 +2,7 @@
 
 # Scala and Spark for BigData
 
-## Intalling and setting up Scala
+## Intalling and setting up Scala ⚙️🪛
 
 Before starting, I share with you that the configuration I am going to use is:
 
@@ -32,7 +32,7 @@ You should see something like:
 
 <code>java-17-openjdk-amd64</code>
 
-After installing, don't forget to set the Java home environmental variable.
+And we declare.
 
 ```
 $ echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
@@ -46,7 +46,7 @@ Now, let's see the <code>Java_HOME</code> as follows:
 
 You should observe the following result on Terminal:
 
-<code>/usr/lib/jvM/java-17-openjdk-amd64</code>
+<code>/usr/lib/jvm/java-17-openjdk-amd64</code>
 
 Now, let's check to make sure that Java has been installed successfully by issuing the following command:
 

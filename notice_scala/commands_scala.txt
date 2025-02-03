@@ -1,0 +1,9 @@
+#===========================================================
+// delete all variables
+scala > :reset
+
+// clear screen
+scala > <Ctrl + l>
+
+// write or paste multi-line code 
+scala > : paste
