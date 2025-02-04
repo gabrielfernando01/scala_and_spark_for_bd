@@ -101,3 +101,104 @@ If Scala has successfully been configured on your system, you should get the fol
 
 <code>Scala code runner version 2.13.14 -- Copyright 2002-2024, LAMP/EPFL and Lightbend, Inc.</code>
 
+### Operators as methods
+
+An alternative syntax for calling a method taking a single parameter is the use of the infinix syntax.
+
+```
+val x = 45
+val y = 75
+
+val add1 = x.+(y)
+```
+
+More formally, the same can be done using the infix syntax, as follow:
+
+<code>val add2 = x + y</code>
+
+In Scala, methods ending with <code>:</code> are **right-associative**. This means that the object to which the method is applied is the one to its right. For example:
+
+```
+val my_list = List(3, 6, 15, 35, 76)
+val my_resu1lt = 5 +: my_list			// The outpus is List(5, 3, 6, 15, 35, 76) 
+```
+
+### Methods and parameter lists
+
+In Scala, the following is the valid method definition (written in _currie notation_) where a method has two parameter lists:
+
+<code>def sum(x: Int)(y: Int) = x + y</code>
+
+The preceding method cannot be written as:
+
+<code>def sum(x: Int, y: Int) = x + y</code>
+
+Method above, let's say <code>sum2</code>, can have no parameter list at all, as follow:
+
+```
+val sum2 = sum(2) _
+val result = sum2(5)
+```
+
+### Constructor in Scala
+
+**Constructor in Java ☕**
+
+In Java, the constructor is a special method that has the same name as the class and is used to initialize objects.
+
+```
+public class Persona {
+	private String nombre;
+	private int edad;
+
+	// Constructor in Java
+	public Persona {
+		this.nombre = nombre;
+		this.edad = edad;
+	}
+	
+	// Method for show info
+	public void mostrarInfo() {
+		System.out.println("Nombre: " + nombre + ", Edad: + edad);
+	}
+	
+	public static void main(String[] args) {
+	// Crear un objeto usando el constructor
+	Persona persona = new Persona("Juan", 25);
+	persona.mostrarInfo(); // Salida: Nombre, Edad: 25
+	}
+}
+```
+
+Explicación:
+
+- El constructor <code>Persona(String nombre, int edad)</code> inicializan los atributos <code>nombre</code> y <code>edad</code>.
+- Para crear un objeto, se usa <code>new Persona("Juan", 25)</code>, donde se pasan los valores al constructor.
+
+***
+
+**Constructor en Scala**
+
+En Scala, el constructor principal está integrado directamente en la definición de la clase. Los parámetros del constructor se declaran junto con la clase, y estos parámetros pueden ser automáticamente miembros de la clase si se marcan como <code>val</code> o <code>var</code>.
+
+```
+class Persona(val nombre: String, val edad: Int) {
+	// Method for show info
+	def mostrarInfo(): Unit {
+		println(s"Nombre: $nombre, Edad: $edad)
+	}
+}
+
+Object Main extends App {
+	// Create a object used the constructor
+	val persona = new Persona("Maria", 30)
+	persona.mostrandoInfo()		// Salida: Nombre: Maria, Edad: 30
+}
+```
+
+Explicación:
+
+- En Scala, el constructor principal está definido en la línea <code>class Persona(val nombre: String, val edad: Int)</code>.
+- Los parámetros <code>nombre</code> y <code>edad</code> son automáticamente miembros de la clase porque están marcados con <code>val</code>.
+- No es necesario escribir un cuerpo de constructor explícito para inicializar los atributos.
+
