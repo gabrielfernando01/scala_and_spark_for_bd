@@ -146,29 +146,7 @@ val result = sum2(5)
 
 In Java, the constructor is a special method that has the same name as the class and is used to initialize objects.
 
-```
-public class Persona {
-	private String nombre;
-	private int edad;
-
-	// Constructor in Java
-	public Persona {
-		this.nombre = nombre;
-		this.edad = edad;
-	}
-	
-	// Method for show info
-	public void mostrarInfo() {
-		System.out.println("Nombre: " + nombre + ", Edad: + edad);
-	}
-	
-	public static void main(String[] args) {
-	// Crear un objeto usando el constructor
-	Persona persona = new Persona("Juan", 25);
-	persona.mostrarInfo(); // Salida: Nombre, Edad: 25
-	}
-}
-```
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/java_constructor.png)
 
 Explicación:
 
@@ -181,20 +159,8 @@ Explicación:
 
 En Scala, el constructor principal está integrado directamente en la definición de la clase. Los parámetros del constructor se declaran junto con la clase, y estos parámetros pueden ser automáticamente miembros de la clase si se marcan como <code>val</code> o <code>var</code>.
 
-```
-class Persona(val nombre: String, val edad: Int) {
-	// Method for show info
-	def mostrarInfo(): Unit {
-		println(s"Nombre: $nombre, Edad: $edad)
-	}
-}
 
-Object Main extends App {
-	// Create a object used the constructor
-	val persona = new Persona("Maria", 30)
-	persona.mostrandoInfo()		// Salida: Nombre: Maria, Edad: 30
-}
-```
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/scala_constructor.png)
 
 Explicación:
 
