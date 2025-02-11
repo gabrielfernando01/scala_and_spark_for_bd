@@ -170,7 +170,7 @@ Explicación:
 
 ### Objects instead of static methods
 
-*** Ejemplo en Java ☕: Método Estático
+**Ejemplo en Java ☕: Método Estático**
 
 En Java, un método estático pertenece a la clase en lugar de a una instancia específica. Esto significa que puedes llamar al método sin necesidad de crear un objeto de la clase.
 
@@ -192,3 +192,27 @@ En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliz
 - En Scala, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
 - Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
 - En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como </code>Calculadora.suma(5, 3)</code>.
+
+### Scala for beginners
+
+**Your first line code**
+
+As a first example, we will use the pretty common <code>Hello, world!</code> program in order to show you how to use Scala and its tools without knowing much about it.
+
+```
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+		println("Hello, world!)
+	}
+}
+```
+
+Now, save the code with a name, say <code>HelloWorld.scala</code>
+
+Let's compile the source file as follows:
+
+```
+$ scalac HelloWorld.scala
+$ scala HelloWorld
+```
+
