@@ -1,8 +1,8 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/cover.jpg)
 
-# Scala and Spark for BigData
+# Scala and Spark for BigData 🟥💥
 
-## Intalling and setting up Scala ⚙️🪛
+## Installing and setting up Scala ⚙️🪛🟥
 
 Before starting, I share with you that the configuration I am going to use is:
 
@@ -20,7 +20,7 @@ Before starting, I share with you that the configuration I am going to use is:
 
 ```
 $ sudo apt update
-$ sudo apt install openjdk-17-jdk
+$ sudo apt install openjdk-11-jdk
 $ java -version
 ```
 
@@ -30,12 +30,12 @@ After installing, don't forget to set the Java home environmental variable. Just
 
 You should see something like:
 
-<code>java-17-openjdk-amd64</code>
+<code>java-11-openjdk-amd64</code>
 
 And we declare.
 
 ```
-$ echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
+$ echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
 $ echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
 $ source ~/.bashrc
 ```
@@ -46,20 +46,20 @@ Now, let's see the <code>Java_HOME</code> as follows:
 
 You should observe the following result on Terminal:
 
-<code>/usr/lib/jvm/java-17-openjdk-amd64</code>
+<code>/usr/lib/jvm/java-11-openjdk-amd64</code>
 
 Now, let's check to make sure that Java has been installed successfully by issuing the following command:
 
-<code>$ java -verison</code>
+<code>$ java -version</code>
 
 You will get the following output:
 
 ```
-openjdk version "17.0.13" 2024-10-15
-OpenJDK Runtime Environment (build 17.0.13+11-Ubuntu-2ubuntu124.04)
+openjdk version "11.0.26" 2025-01-25
+OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 ```
 
-### Installing Scala
+### Installing Scala 🟥
 
  Before starting, let's check to make sure Scala is installed properly.
  
@@ -67,25 +67,25 @@ OpenJDK Runtime Environment (build 17.0.13+11-Ubuntu-2ubuntu124.04)
  
 If Scala is already installed on your system, you should get the following message on your terminal:
 
-<code>Scala code runner version 2.13.14 -- Copyright 2002-2024, LAMP/EPFL and Lightbend, Inc.</code>
+<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
 Scala no está disponible en los repositorios oficiales de Ubuntu, por lo que necesitas descargarlo manualmente desde el sitio oficial. 
 
 1. Go 👉🏼 to the official Scala website: [Scala](https://www.scala-lang.org/).
-2. Find version 2.13.14 and copy the download link of the file <code>.tgz</code>.
+2. Find version 2.13.8 and copy the download link of the file <code>.tgz</code>.
 3. Extract the downloaded file
 
 Extract the <code>.tgz</code> file to a suitable directory, such as <code>/usr/local/scala:</code>
 
 ```
-$ sudo mkdir -p /usr/local/scala
-$ sudo tar -xvzf scala-2.13.14.tgz -C /usr/local/scala
+$ sudo mkdir -p /usr/local/share/scala
+$ sudo tar -xvzf scala-2.13.8.tgz -C /usr/local/share/scala
 ```
 
 4. Configurate envioronment variables:
 
 ```
-$ echo "export SCALA_HOME=/usr/local/share/scala/scala-2.13.14" >> ~/.bashrc
+$ echo "export SCALA_HOME=/usr/local/share/scala" >> ~/.bashrc
 $ echo "export PATH=$PATH:$SCALA_HOME/bin" >> ~/.bashrc
 ```
 
@@ -99,7 +99,7 @@ After the installation has been completed, you should better to verify it using 
 
 If Scala has successfully been configured on your system, you should get the following message on your terminal:
 
-<code>Scala code runner version 2.13.14 -- Copyright 2002-2024, LAMP/EPFL and Lightbend, Inc.</code>
+<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
 ### Operators as methods
 
@@ -133,7 +133,7 @@ The preceding method cannot be written as:
 
 <code>def sum(x: Int, y: Int) = x + y</code>
 
-Method above, let's say <code>sum2</code>, can have no parameter list at all, as follow:
+Method above 👆🏼, let's say <code>sum2</code>, can have no parameter list at all, as follow:
 
 ```
 val sum2 = sum(2) _
