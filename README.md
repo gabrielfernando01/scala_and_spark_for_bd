@@ -216,3 +216,21 @@ $ scalac HelloWorld.scala
 $ scala HelloWorld
 ```
 
+The following is the same <code>Hello, world!</code> example, but using the <code>App</code> trait:
+
+```
+#!/usr/bin/env scala
+object HelloWorld extends App {
+    println("Hello, world!")
+}
+```
+
+The preceding script can be run directly from the commmand shell:
+
+<code>$ ./script.sh</code>
+
+Note: we assume here that the file <code>script.sh</code> has the execute permission:
+
+<code>$ sudo chmod +x script.sh</code>
+
+Then, the search path for the scala command is specified in the <code>$PATH</code> environment variable.
