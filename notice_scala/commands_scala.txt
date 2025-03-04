@@ -1,4 +1,10 @@
-#===========================================================
+# =========================================================
+// Validate that java, scala, sbt are installed:
+$ java -version
+$ scala -version
+$ sbt -version
+
+# ===========================================================
 // delete all variables
 scala > :reset
 
@@ -7,3 +13,17 @@ scala > <Ctrl + l>
 
 // write or paste multi-line code 
 scala > : paste
+
+# ===========================================================
+// Your first line of code
+
+object HelloWorld {
+    def main(args: Array[String]{
+        println("Hello, world!")
+    }
+}
+
+//Let's compile the source file as follows:
+$ scalac HelloWorld.scala
+$ scala HelloWorld
+
