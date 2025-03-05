@@ -99,7 +99,7 @@ The Scala object does a similar thing, and it's well taken care of by the compil
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_scala.png)
 
-### Companion objects
+### Companion objects 
 
 When a <code>singleton object</code> is named the same as a class, it is called a <code>companion object</code>. A companion object must be defined inside the same source file as the class. Let's demonstrate this with the example here:
 

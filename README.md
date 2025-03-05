@@ -2,7 +2,7 @@
 
 # Scala and Spark for BigData 🟥💥
 
-## Installing and setting up Scala ⚙️🪛🟥
+## Installing and setting up Scala 🟥⚙️🪛.
 
 Before starting, I share with you that the configuration I am going to use is:
 
@@ -59,13 +59,13 @@ openjdk version "11.0.26" 2025-01-25
 OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 ```
 
-### Installing Scala 🟥
+### Installing Scala 🟥.
 
  Before starting, let's check to make sure Scala is installed properly.
  
  <code>$ scala -version</code>
  
-If Scala is already installed on your system, you should get the following message on your terminal:
+If Scala 🟥 is already installed on your system, you should get the following message on your terminal:
 
 <code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
@@ -125,7 +125,7 @@ val my_resu1lt = 5 +: my_list			// The outpus is List(5, 3, 6, 15, 35, 76)
 
 ### Methods and parameter lists
 
-In Scala, the following is the valid method definition (written in _currie notation_) where a method has two parameter lists:
+In Scala 🟥, the following is the valid method definition (written in _currie notation_) where a method has two parameter lists:
 
 <code>def sum(x: Int)(y: Int) = x + y</code>
 
@@ -140,11 +140,11 @@ val sum2 = sum(2) _
 val result = sum2(5)
 ```
 
-### Constructor in Scala
+### Constructor in Scala 🟥.
 
 **Constructor in Java ☕**
 
-In Java, the constructor is a special method that has the same name as the class and is used to initialize objects.
+In Java ☕, the constructor is a special method that has the same name as the class and is used to initialize objects.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/java_constructor.png)
 
@@ -155,45 +155,45 @@ Explicación:
 
 ***
 
-**Constructor en Scala**
+**Constructor en Scala 🟥**
 
-En Scala, el constructor principal está integrado directamente en la definición de la clase. Los parámetros del constructor se declaran junto con la clase, y estos parámetros pueden ser automáticamente miembros de la clase si se marcan como <code>val</code> o <code>var</code>.
+En Scala 🟥, el constructor principal está integrado directamente en la definición de la clase. Los parámetros del constructor se declaran junto con la clase, y estos parámetros pueden ser automáticamente miembros de la clase si se marcan como <code>val</code> o <code>var</code>.
 
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/scala_constructor.png)
 
 Explicación:
 
-- En Scala, el constructor principal está definido en la línea <code>class Persona(val nombre: String, val edad: Int)</code>.
+- En Scala 🟥, el constructor principal está definido en la línea <code>class Persona(val nombre: String, val edad: Int)</code>.
 - Los parámetros <code>nombre</code> y <code>edad</code> son automáticamente miembros de la clase porque están marcados con <code>val</code>.
 - No es necesario escribir un cuerpo de constructor explícito para inicializar los atributos.
 
-### Objects instead of static methods
+### Objects instead of static methods.
 
-**Ejemplo en Java ☕: Método Estático**
+**Ejemplo en Java ☕: Método Estático.**
 
-En Java, un método estático pertenece a la clase en lugar de a una instancia específica. Esto significa que puedes llamar al método sin necesidad de crear un objeto de la clase.
+En Java ☕, un método estático pertenece a la clase en lugar de a una instancia específica. Esto significa que puedes llamar al método sin necesidad de crear un objeto de la clase.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/static_method_java.png)
 
 - El método <code>suma</code> es estático (<code>static</code>), lo que significa que no necesitas crear una instancia de la clase <code>calculadora</code> para usarlo.
-- Puedes llamar al método directamente usando el nombre de la clase: <code>calculadora.sum(5, 3)</code>.
+- Puedes llamar al método directamente usando el nombre de la clase: <code>Calculadora.sum(5, 3)</code>.
 
 ***
 
-In Scala, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. Functions that you define in this companion object of a class are like static methods of a class in Java:
+In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. Functions that you define in this companion object of a class are like static methods of a class in Java ☕:
 
-En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliza un **objeto singleton** (un objeto definido con la palabra clave <code>object</code>) para lograr un comportamiento similar al de los métodos estáticos en Java.
+En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliza un **objeto singleton** (un objeto definido con la palabra clave <code>object</code>) para lograr un comportamiento similar al de los métodos estáticos en Java ☕.
 
-**Código en Scala:**
+**Código en Scala 🟥:**
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton_object.png)
 
-- En Scala, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
+- En Scala 🟥, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
 - Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
 - En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como </code>Calculadora.suma(5, 3)</code>.
 
-### Scala for beginners
+### Scala 🟥 for beginners.
 
 **Your first line code**
 

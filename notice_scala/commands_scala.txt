@@ -28,3 +28,18 @@ $ scalac HelloWorld.scala
 $ scala HelloWorld
 
 # ===========================================================
+Teoría Scala 🟥
+
+Un objecto Singlenton se declara:
+
+object <ObjectName> {
+    // fields, methods, definitions
+}
+
+- NameObject: Identificador unico del Singlenton
+- No admite parámetros de constructor (a diferencia de las clases)
+- Puede contener fields, methods, values y cualquier lógica que una clase pueda tener, pero todo está asociado a una instanica.
+
+
+
+
