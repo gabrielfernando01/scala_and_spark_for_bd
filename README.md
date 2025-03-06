@@ -170,7 +170,7 @@ Explicación:
 
 ### Objects instead of static methods.
 
-As mentioned earlier, static does not exist in Scala 🟥. You cannot do static imports and neither can you cannot add static methods to classes. In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. 
+As mentioned earlier, <code>static</code> does not exist in Scala 🟥. You cannot do <code>static</code> imports and neither can you cannot add static methods to classes. In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. 
 
 **Ejemplo en Java ☕: Método Estático.**
 
@@ -193,7 +193,7 @@ En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliz
 
 - En Scala 🟥, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
 - Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
-- En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como </code>Calculadora.suma(5, 3)</code>.
+- En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como <code>Calculadora.suma(5, 3)</code>.
 
 ### Traits
 

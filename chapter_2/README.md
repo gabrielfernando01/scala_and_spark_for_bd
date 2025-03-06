@@ -80,7 +80,7 @@ We have two variables <code>animalName</code> **and** <code>animalAge</code> wit
 
 ### Objects in Scala 🟥.
 
-An **object** in Scala has a slightly different meaning than the traditional OOP one, and this difference should be explained. In particular, in OOP, an object is an instance of a class, while in Scala, anything that is declared as an object cannot be instantiated! The <code>object</code> is a keyword in Scala. The basic syntax for declaring an object in Scala is as follows:
+An **object** in Scala 🟥 has a slightly different meaning than the traditional OOP one, and this difference should be explained. In particular, in OOP, an object is an instance of a class, while in Scala, anything that is declared as an object cannot be instantiated! The <code>object</code> is a keyword in Scala. The basic syntax for declaring an object in Scala is as follows:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/class_Animal00.png)
 
@@ -95,17 +95,17 @@ In this subsection, we will see a comparative analysis between the singleton obj
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_java.png)
 
-The Scala object does a similar thing, and it's well taken care of by the compiler. Since there will be only one instance, there is no way for object creation here:
+The Scala 🟥 object does a similar thing, and it's well taken care of by the compiler. Since there will be only one instance, there is no way for object creation here:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_scala.png)
 
-### Companion objects 
+### Companion objects.
 
-When a <code>singleton object</code> is named the same as a class, it is called a <code>companion object</code>. A companion object must be defined inside the same source file as the class. Let's demonstrate this with the example here:
+When a <code>singleton object</code> is named the same as a class, it is called a <code>companion object</code>. A companion object must be defined inside the same source file as the class. Let's demonstrate this with the example here 👇🏼:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/companion_object.png)
 
-A Java ☕ equivalent would be similar, as follow:
+A Java ☕ equivalent would be similar, as follow 👇🏼:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/companion_object_java.png)
 
