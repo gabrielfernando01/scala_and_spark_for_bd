@@ -170,6 +170,8 @@ Explicación:
 
 ### Objects instead of static methods.
 
+As mentioned earlier, static does not exist in Scala 🟥. You cannot do static imports and neither can you cannot add static methods to classes. In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. 
+
 **Ejemplo en Java ☕: Método Estático.**
 
 En Java ☕, un método estático pertenece a la clase en lugar de a una instancia específica. Esto significa que puedes llamar al método sin necesidad de crear un objeto de la clase.
@@ -192,6 +194,12 @@ En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliz
 - En Scala 🟥, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
 - Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
 - En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como </code>Calculadora.suma(5, 3)</code>.
+
+### Traits
+
+Scala provides a great functionality for you in order to extends and enrich your classes behaviors. These traits are similar to the interfaces in which you define the function prototype or signature.
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/trait.png)
 
 ### Scala 🟥 for beginners.
 
