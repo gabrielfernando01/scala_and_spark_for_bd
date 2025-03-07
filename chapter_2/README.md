@@ -76,13 +76,13 @@ Classes are considered as a blueprint and then you instantiate this class in ord
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/class_Animal00.png)
 
-We have two variables <code>animalName</code> **and** <code>animalAge</code> with their setters and getters. Now, how do we use them to solve our purpose? Here come the usages of Scala objects. Now, we will discuss Scala objects, then we will trace back to our next discussion.
+We have two variables <code>animalName</code> **and** <code>animalAge</code> with their setters and getters. Now, how do we use them to solve our purpose? Here come the usages of Scala 🟥 objects. Now, we will discuss Scala objects, then we will trace back to our next discussion.
 
 ### Objects in Scala 🟥.
 
-An **object** in Scala 🟥 has a slightly different meaning than the traditional OOP one, and this difference should be explained. In particular, in OOP, an object is an instance of a class, while in Scala, anything that is declared as an object cannot be instantiated! The <code>object</code> is a keyword in Scala. The basic syntax for declaring an object in Scala is as follows:
+An **object** in Scala 🟥 has a slightly different meaning than the traditional OOP one, and this difference should be explained. In particular, in OOP, an object is an instance of a class, while in Scala 🟥, anything that is declared as an object cannot be instantiated! The <code>object</code> is a keyword in Scala. The basic syntax for declaring an object in Scala is as follows:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/class_Animal00.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/object_scala00.png)
 
 This hello world example is pretty similar to the Java ones. The only big difference is that the main method is not inside a class, but instead it's inside an object. In Scala, the keyword object can mean two different things:
 
@@ -91,7 +91,7 @@ This hello world example is pretty similar to the Java ones. The only big differ
 
 ### Singlenton and companion objects.
 
-In this subsection, we will see a comparative analysis between the singleton object in Scala 🟥 and Java ☕. The idea beneath the singleton pattern is to have an implementation that makes sure that only a single instance of a class can exist. Here's an example of the Singleton pattern in Java:
+In this subsection, we will see a comparative analysis between the singleton object in Scala 🟥 and Java ☕. The idea beneath the singleton pattern is to have an implementation that makes sure that only a single instance of a class can exist. Here's an example of the Singleton pattern in Java ☕:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_java.png)
 

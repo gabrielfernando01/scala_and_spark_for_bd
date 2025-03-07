@@ -101,7 +101,7 @@ If Scala has successfully been configured on your system, you should get the fol
 
 <code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
-### Operators as methods
+### Operators as methods.
 
 An alternative syntax for calling a method taking a single parameter is the use of the infinix syntax.
 
@@ -123,7 +123,7 @@ val my_list = List(3, 6, 15, 35, 76)
 val my_resu1lt = 5 +: my_list			// The outpus is List(5, 3, 6, 15, 35, 76) 
 ```
 
-### Methods and parameter lists
+### Methods and parameter lists 📋.
 
 In Scala 🟥, the following is the valid method definition (written in _currie notation_) where a method has two parameter lists:
 
@@ -178,7 +178,7 @@ En Java ☕, un método estático pertenece a la clase en lugar de a una instanc
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/static_method_java.png)
 
-- El método <code>suma</code> es estático (<code>static</code>), lo que significa que no necesitas crear una instancia de la clase <code>calculadora</code> para usarlo.
+- El método <code>suma</code> es estático (<code>static</code>), lo que significa que no nece	sitas crear una instancia de la clase <code>calculadora</code> para usarlo.
 - Puedes llamar al método directamente usando el nombre de la clase: <code>Calculadora.sum(5, 3)</code>.
 
 ***
