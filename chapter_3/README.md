@@ -47,11 +47,11 @@ Imagina un dataset de transacciones financieras en AWS S3 con millones de filas.
 
 In a nutshell, the following topics will be covered in this chapter:
 
-📍 Introduction to functional programming.
-🥊 Functional Scala for the data scientists.
-🌟 Why functional programming and Scala are important for learning Spark?.	
-🎱 Pure functions and higher-order functions.
-✨ Using higher-order functions: A real-life use case.
-💊 Error handling in functional Scala.
-🔸 Funtional programming and data mutability.
+-📍 Introduction to functional programming.
+-🥊 Functional Scala for the data scientists.
+-🌟 Why functional programming and Scala are important for learning Spark?.	
+-🎱 Pure functions and higher-order functions.
+-✨ Using higher-order functions: A real-life use case.
+-💊 Error handling in functional Scala.
+-🔸 Funtional programming and data mutability.
 

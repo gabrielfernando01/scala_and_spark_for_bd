@@ -30,3 +30,5 @@ En Big Data, donde se manejan datasets masivos (millones o billones de registros
     val conteo = datos.map(line => line.split(" ").length).reduce(_ + _)
 
     map transforma cada línea en un conteo de palabras, y reduce suma todo, distribuyendo el trabajo.
+
+# =================================================================
