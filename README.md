@@ -6,9 +6,9 @@
 
 Before starting, I share with you that the configuration I am going to use is:
 
-- Java 11.0.26
-- Scala 2.13.8
-- Spark 3.5.1
+☕ Java 11.0.26
+🟥 Scala 2.13.8
+💥 Spark 3.5.1
 
 ### Installing Java ☕
 

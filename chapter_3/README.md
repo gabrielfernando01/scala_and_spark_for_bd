@@ -1,6 +1,5 @@
 # Fuctional Programming Concepts.
 
-
 **Que son las higher-order (HOF) functions?**
 
 Las higher-order functions son funciones que cumplen al menos una de estas condiciones:
@@ -34,7 +33,7 @@ En Big Data, donde se manejan datasets masivos (millones o billones de registros
 
 4. Optimización automática:
 
-	🔷 Sistemas como Spark 💥 optimizan las operaciones definidas por higher-order functions (gracias a su "lazy evaluation"). Por ejemplo, <code>map</code> y <code>filter</code> se combinan en una sola pasada sobre los datos, reduciendo el costo computacional.
+	🔷 Sistemas como Spark 💥 optimizan las operaciones definidas por higher-order functions (gracias a su "lazy evaluation"). Por ejemplo, <code>map</code> y <code>filter</code> se combinan en una sola pasada sobre los datos, reduciendo el 	costo computacional.
 	
 **Ejemplo práctico en Big Data**
 
@@ -48,7 +47,11 @@ Imagina un dataset de transacciones financieras en AWS S3 con millones de filas.
 
 In a nutshell, the following topics will be covered in this chapter:
 
-	- 📍 Introduction to functional programming.
-	- 🥊 Functional Scala for the data scientists.
-	- 🌟 Why functional programming and Scala are important for learning Spark?.
-	
+📍 Introduction to functional programming.
+🥊 Functional Scala for the data scientists.
+🌟 Why functional programming and Scala are important for learning Spark?.	
+🎱 Pure functions and higher-order functions.
+✨ Using higher-order functions: A real-life use case.
+💊 Error handling in functional Scala.
+🔸 Funtional programming and data mutability.
+
