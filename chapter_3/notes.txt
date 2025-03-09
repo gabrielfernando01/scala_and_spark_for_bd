@@ -1,0 +1,32 @@
+# =================================================================
+¿Que son las higher-order functions?
+
+Las higher-order functions son funciones que cumplen una de estas condiciones:
+
+    ✨ Toman una o más funciones como argumentos: Puedes pasar una función comoo parámetro a otra funcion.
+    ⚡ Devuelven una función como resultado: La función genera otra función al ejecutarse.
+
+Ejemplo:
+
+val numeros = List(1, 2, 3, 4)
+// map es una higher-order function que toma una función (x => x * 2) como argumento.
+val doblados = numeros.map(x => x * 2)  // Resultado List(2, 4, 6, 8)
+
+map es una orden superior porque recibe una función anónima (x => x * 2) y la aplica a cada elemento.
+
+¿Por qué son importantes en Big Data?
+
+En Big Data, donde se manejan datasets masivos (millones o billones de registros), las higher-order functions son clave por estas razones:
+
+    ¿Por qué son importantes en Big Data?
+
+En Big Data, donde se manejan datasets masivos (millones o billones de registros), las higher-order functions son clave por estas razones:
+
+1 Procesamiento distribuido
+
+    🟠 Frameworks como Apache Spark (muy usado en Big Data) dependen de funciones como map, filter, reduce, que son higher-order. Estas se ejecutan en paralelo across nodos de un clúster. Por ejemplo:
+
+    val datos = sparkContext.textFile("bigdata.txt")
+    val conteo = datos.map(line => line.split(" ").length).reduce(_ + _)
+
+    map transforma cada línea en un conteo de palabras, y reduce suma todo, distribuyendo el trabajo.
