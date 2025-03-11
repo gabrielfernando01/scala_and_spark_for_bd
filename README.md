@@ -1,14 +1,14 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/cover.jpg)
 
-# Scala and Spark for BigData 🟥💥
+# Scala 🟥 and Spark 💥 for BigData. 
 
 ## Installing and setting up Scala 🟥⚙️🪛.
 
 Before starting, I share with you that the configuration I am going to use is:
 
-☕ Java 11.0.26
-🟥 Scala 2.13.8
-💥 Spark 3.5.1
+- ☕ Java 11.0.26
+- 🟥 Scala 2.13.8
+- 💥 Spark 3.5.1
 
 ### Installing Java ☕
 

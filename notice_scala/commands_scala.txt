@@ -12,7 +12,7 @@ scala > :reset
 scala > <Ctrl + l>
 
 // write or paste multi-line code 
-scala > : paste
+scala > :paste
 
 # ===========================================================
 // Your first line of code
@@ -36,10 +36,20 @@ object <ObjectName> {
     // fields, methods, definitions
 }
 
-- NameObject: Identificador unico del Singlenton
-- No admite parámetros de constructor (a diferencia de las clases)
-- Puede contener fields, methods, values y cualquier lógica que una clase pueda tener, pero todo está asociado a una instanica.
+    💡 ObjectName: Identificador unico del Singlenton
+    🤖 No admite parámetros de constructor (a diferencia de las clases)
+    📌 Puede contener fields, methods, values y cualquier lógica que una clase pueda tener, pero todo está asociado a una instanica.
 
+# ===========================================================
+Spark 💥 puede leer datos desde:
+
+    🐘 Sistemas de archivos distribuidos: Como HDFS (Hadoop Distributed File System).
+    🪣 Almacenamiento en la nube: Amazon S3, Google Cloud Storage, Azure Blob Storage.
+    🗒️ Formatos estructurados: CSV, JSON, Parquet, ORC, Avro.
+    🛢️ Bases de datos: JDBC para conectar con MySQL, PostgreSQL, etc.
+    🔵 Fuentes en tiempo real: Kafka, Flume.
+
+# ===========================================================
 
 
 
