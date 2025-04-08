@@ -21,7 +21,7 @@ En Big Data, donde se manejan datasets masivos (millones o billones de registros
 
 1. Procesamiento distribuido
 
-- 📌 Frameworks como Apache Spark 💥 dependen de funciones como <code>map</code>, <code>filter</code>, <code>reduce</code>, que son higher-order. Estas se ejecutan en paralelo across nodos de un clúster. Por ejemplo:
+📌 Frameworks como Apache Spark ⭐ dependen de funciones como <code>map</code>, <code>filter</code>, <code>reduce</code>, que son higher-order. Estas se ejecutan en paralelo across nodos de un clúster. Por ejemplo:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/procesamiento_dist.png)
 
@@ -29,17 +29,17 @@ En Big Data, donde se manejan datasets masivos (millones o billones de registros
 
 2. Abstracción y simplicidad:
 
-- 💡 Permiten escribir código conciso y legible sin bucles manuales. En Big Data, donde iterar manualmente sobre terabytes es inviable, estas funciones abstraen la lógica y delegan la ejecución al framework.
+💡 Permiten escribir código conciso y legible sin bucles manuales. En Big Data, donde iterar manualmente sobre terabytes es inviable, estas funciones abstraen la lógica y delegan la ejecución al framework.
 	
-3. Inmutabilidad y segurida.
+3. Inmutabilidad y seguridad.
 
 4. Optimización automática:
 
-- 🔷 Sistemas como Spark 💥 optimizan las operaciones definidas por higher-order functions (gracias a su "lazy evaluation"). Por ejemplo, <code>map</code> y <code>filter</code> se combinan en una sola pasada sobre los datos, reduciendo el 	costo computacional.
+🔷 Sistemas como Spark ⭐ optimizan las operaciones definidas por higher-order functions (gracias a su "lazy evaluation"). Por ejemplo, <code>map</code> y <code>filter</code> se combinan en una sola pasada sobre los datos, reduciendo el 	costo computacional.
 
 **Ejemplo práctico en Big Data**
 	
-Imagina un dataset de transacciones financieras en AWS S3 con millones de filas. Quieres filtrar transacciones mayores a $1000 y sumarlas:
+Imagina un dataset de transacciones financieras en ☁️ AWS S3 con millones de filas. Quieres filtrar transacciones mayores a $1'000 y sumarlas:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/filter_data.png)
 
@@ -49,24 +49,24 @@ Imagina un dataset de transacciones financieras en AWS S3 con millones de filas.
 
 In a nutshell, the following topics will be covered in this chapter:
 
-+ 📍 Introduction to functional programming.
-+ 🥊 Functional Scala for the data scientists.
-+ 🌟 Why functional programming and Scala are important for learning Spark?.	
-+ 🎱 Pure functions and higher-order functions.
-+ ✨ Using higher-order functions: A real-life use case.
-+ 💊 Error handling in functional Scala.
+- 📍 Introduction to functional programming.
+- 🥊 Functional Scala for the data scientists.
+- 🌟 Why functional programming and Scala are important for learning Spark?.	
+- 🎱 Pure functions and higher-order functions.
+- ✨ Using higher-order functions: A real-life use case.
+- 💊 Error handling in functional Scala.
 
 ## Introduction to functional programming.
 
 This is not a new concept but the <code>Lambda Calculus</code>, which provides the basis of FP, was first introduced in the 1930s. However, in the realm of programming language, the term functional programming refers to a new style of declarative programming paradigm that means programming can be done with the help of control, declarations, or expressions instead of classical statements commonly used in an old programming language, such as C.
 
-## Why Spark 💥?.
+## Why Spark ⭐?.
 
-As mentioned earlier, Spark is built on top of the Hadoop 🐘 software and you can deploy Spark 💥 in different ways:
+As mentioned earlier, Spark is built on top of the Hadoop 🐘 software and you can deploy Spark ⭐ in different ways:
 
 - **Standalone cluster**: This means that Spark will run on top of Hadoop Distributed File System (HDFS) and space will actually be allocated to HDFS. Spark and MapReduce will run side by side to serve all the Spark jobs.
 - **Hadoop YARN cluster**: This means that Spark simply runs on YARN without any root privileges or pre-installations.
 - **Mesos cluster**: When a driver program creates a Spark job and starts assigning related tasks for scheduling, Mesos determines which computing nodes will handle which tasks. We assume that you have already configured and installed
 Mesos on your machine.
-- **Deploy on pay-as-you-go cluster**: You can deploy Spark jobs in real cluster mode on AWS EC2. To make your applications run on Spark 💥 cluster mode and for better scalability, you can consider Amazon Elastic Compute Cloud (EC2) ☁️ services as Infrastructure as a Service (IaaS) or Platform as a Service (PaaS).
+- **Deploy on pay-as-you-go cluster**: You can deploy Spark jobs in real cluster mode on AWS EC2. To make your applications run on Spark ⭐ cluster mode and for better scalability, you can consider Amazon Elastic Compute Cloud (EC2) ☁️ services as Infrastructure as a Service (IaaS) or Platform as a Service (PaaS).
 

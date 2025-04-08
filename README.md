@@ -1,6 +1,6 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/cover.jpg)
 
-# Scala 🟥 and Spark 💥 for BigData. 
+# Scala 🟥 and Spark ⭐ for BigData. 
 
 ## Installing and setting up Scala 🟥⚙️🪛.
 
@@ -8,9 +8,9 @@ Before starting, I share with you that the configuration I am going to use is:
 
 - ☕ Java 11.0.26
 - 🟥 Scala 2.13.8
-- 💥 Spark 3.5.1
+- ⭐ Spark 3.5.1
 
-### Installing Java ☕
+### Installing Java ☕.
 
  At first, check whether Java is already installed:
  
@@ -101,7 +101,7 @@ If Scala has successfully been configured on your system, you should get the fol
 
 <code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
-### Operators as methods.
+### ✨ Operators as methods.
 
 An alternative syntax for calling a method taking a single parameter is the use of the infinix syntax.
 
@@ -168,7 +168,7 @@ Explicación:
 - Los parámetros <code>nombre</code> y <code>edad</code> son automáticamente miembros de la clase porque están marcados con <code>val</code>.
 - No es necesario escribir un cuerpo de constructor explícito para inicializar los atributos.
 
-### Objects instead of static methods.
+### 🚀 Objects instead of static methods.
 
 As mentioned earlier, <code>static</code> does not exist in Scala 🟥. You cannot do <code>static</code> imports and neither can you cannot add static methods to classes. In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. 
 
