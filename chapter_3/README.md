@@ -100,3 +100,30 @@ assert(pureFunc("Dublin") == I live in Dublin
 ```
 
 Por otro lado, si quisiéramos probar nuestra función impura <code>notpureFunc</code>, necesitaríamos redirigir la salida estándar y aplicarle una aserción. El siguiente consejo práctico es que la programación funcional aumenta la productividad de los programadores porque, como se mencionó anteriormente, las funciones puras son más pequeñas y fáciles de escribir, y se pueden combinar fácilmente. Además, la duplicación de código es mínima y se puede reutilizar fácilmente. Ahora, demuestremos esta ventaja con un mejor ejemplo. Consideremos estas dos funciones:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/pureMul.png)
+
+Sin embargo, la mutabilidad puede tener efectos secundarios; usar una función pura (es decir, sin mutabilidad) nos ayuda a razonar y probar el código:
+
+```
+def pureIncrease(x: Int) = x + 1
+```
+
+Este es ventajoso y muy fácil de interpretar y usar. Sin embargo, veamos otro ejemplo:
+
+```
+var inc = 0
+def impureIncrease() = {
+	inc += 1
+	inc
+}
+```
+
+Ahora, considere lo confuso que puede ser esto: ¿cuál será el resultado en un entorno multiproceso? Como puede ver, podemos usar fácilmente nuestra función pura, pureMul, para multiplicar cualquier secuencia de números, a diferencia de nuestra función impura notpureMul. Demostremos esto con el siguiente ejemplo:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/reduce_pureMul.png)
+
+El código completo de los ejemplos anteriores se puede mostrar de la siguiente manera (los métodos se llamaron utilizando algunos valores reales):
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/pureAndNotPureFunc.png)
+
