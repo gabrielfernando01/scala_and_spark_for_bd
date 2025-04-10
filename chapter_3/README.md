@@ -127,3 +127,76 @@ El código completo de los ejemplos anteriores se puede mostrar de la siguiente 
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/pureAndNotPureFunc.png)
 
+Como se mencionó anteriormente, puede considerar las funciones puras como una de las características más importantes de la programación funcional y como una práctica recomendada; debe construir el núcleo de su aplicación utilizando funciones puras.
+
+**🚨 Functions versus methods**:
+
+En programación, una función es un fragmento de código al que se llama por un nombre. Se pueden pasar datos (como argumento o parámetro) para operar sobre ellos y devolverlos (opcionalmente). Todos los datos que se pasan a una función se pasan explícitamente. Un método, por otro lado, también es un fragmento de código al que se llama por un nombre. Sin embargo, un método siempre está asociado a un objeto.
+
+🧵 Sounds similar? Well! In most cases, a method is identical to a function
+except for two key differences:
+
+1. A method is implicitly passed the object on which it was called.
+2. A method is able to operate on data that is contained within the class.
+
+Ya se afirmó en el capítulo anterior que un objeto es una instancia de una clase: la clase es la definición y el objeto es una instancia de esos datos.
+
+Ahora es momento de aprender sobre funciones de orden superior. Sin embargo, antes de eso, debemos aprender un concepto más importante en Scala funcional: las **funciones anónimas**. Con esto, también aprenderemos a usar la expresión lambda con Scala funcional.
+
+## Anonymous functions
+
+A veces, en tu código, no conviene definir una función antes de usarla, quizás porque la usarás en un solo lugar. En programación funcional, existe un tipo de función muy adecuado para esta situación: la función anónima. Demostremos el uso de funciones anónimas con el ejemplo anterior de transferencia de dinero:
+
+```
+def TransferMoney(money: Double, bankFee: Double => Double): Double = {
+	money + bankFee(money)
+}
+```
+
+Now, let's call the <code>TransferMoney()</code> method with some real value as follow:
+
+```
+TransferMoney(100, amount: Double) => amount * 0.05)
+```
+
+**🚨 Lambda expression**:
+
+Como ya se mencionó, Scala admite funciones de primera clase, lo que significa que las funciones también pueden expresarse en sintaxis literal de función; las funciones pueden representarse mediante objetos, llamados valores de función. Pruebe la siguiente expresión; esta crea una función sucesora para enteros:
+
+```
+scala> var apply = (x: Int) => x + 1
+apply: Int => Int = <function1>
+```
+
+The apply variable is now a function that can be used in the usual way as follow:
+
+```
+scala> var x = apply(8)
+x: Int = 9
+```
+
+⚠️ Lo que hemos hecho aquí es simplemente usar el núcleo de una función: la lista de argumentos, seguida de la flecha de función y el cuerpo de la función. Esto no es magia negra, sino una función completa, solo que sin nombre, es decir, anónima. Si se define una función de esta manera, no habrá forma de referirse a ella posteriormente y, por lo tanto, no se podrá llamar a ella posteriormente, ya que sin nombre es anónima. Además, tenemos la llamada **expresión lambda!**. Es simplemente la definición pura y anónima de una función.
+
+## 🚀 Higher-order functions.
+
+In Scala's functional programming, you are allowed to pass functions as parameters and even return a function as a result from another function; this defines what are called higher-order functions.
+
+Let's demonstrate this feature by an example. Consider the following function <code>testHOF</code> that takes another function <code>func</code> and then applies this function to its second argument value:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/hof.png)
+
+Ejecutando el código en REPL tenemos:
+
+```
+scala> Test.main(Array())
+[10]
+```
+
+Tras demostrar los fundamentos de la programación funcional de Scala 🟥, estamos listos para abordar casos más complejos de programación funcional. Como se mencionó anteriormente, podemos definir una función de orden superior como una función que acepta otras funciones como argumentos y las devuelve como resultado. Si tienes experiencia en programación orientada a objetos, te resultará un enfoque muy diferente, pero te resultará más fácil de entender a medida que avancemos.
+
+Let's start by defining a simple function:
+
+```
+def quarterMaker(value: Int): Double = value.toDouble/4
+```
+
