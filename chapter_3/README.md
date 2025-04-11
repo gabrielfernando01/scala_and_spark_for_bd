@@ -13,7 +13,7 @@ Ejemplo en Scala 🟥:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/higher_order_function.png)
 
-Aquí, <code>map</code> es de orden superior porque recibe una función anónima (<code>x => x * 2</code>) y la aplica a cada elemento.
+Aquí, <code>map</code> es de orden superior porque recibe una función anónima (<code>line => line.split(" ").length</code>) y la aplica a cada elemento.
 
 **Por qué son importantes en Big Data?**
 
@@ -199,4 +199,64 @@ Let's start by defining a simple function:
 ```
 def quarterMaker(value: Int): Double = value.toDouble/4
 ```
+
+The previous function is a very simple one. It's a function that accepts an Int value and then returns a quarter of this value in a Double type. Let's define another simple function:
+
+```
+def addTwo (value: Int): Int = value + 2
+```
+
+The second function <code>addTwo</code> is more trivial than the first one. It accepts an <code>Int</code> value and then adds 2 to it. As you can see, these two functions have something in common. Both of them accept <code>Int</code> and return another processed value that we can call <code>AnyVal</code>. Now, let's define a higher-order function that accepts another function among its parameters:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/applyFuncOnRange.png)
+
+Podemos usar las funciones anteriores con <code>applyFuncOnRange</code>:
+
+```
+applyFuncOnRange(0, 5, quarterMaker)
+applyFuncOnRange(1, 10, addTwo)
+```
+
+🚨 **Scala syntax for loop with range**: The simple syntax of using a for loop with range in Scala is:
+
+```
+for (var x <- range) {
+	statement(s)
+}
+```
+Here, the <code>range</code> could be a range of numbers and is represented as <code>i</code> to <code>j</code> or sometimes like <code>i</code> until <code>j</code>. The left-arrow <code>-></code> operator is called a generator because it's generating individual values from a range. Let's see a concrete example of this feature:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/usingRange.png)
+
+Before going into more examples, let's define what's called a callback function. A callback function is a function that can be passed as an argument to another function. Other functions are simply normal functions. Let's demonstrate more examples of using different callback functions. Consider the following higher-order function, which is responsible for transferring a specific amount of money from your account:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/TransferMoney.png)
+
+After calling the <code>TransferMoney</code> function on 100:
+
+```
+TransferMoney(100, bankFee)
+```
+
+The output of the preceding code is as follow:
+
+105.0
+
+Desde una perspectiva de programación funcional, este código no está listo para integrarse en el sistema bancario, ya que requiere aplicar diferentes validaciones a los parámetros monetarios, como que sean positivos y mayores que la cantidad especificada por el banco. Sin embargo, aquí solo demostramos el uso de funciones de alto nivel y funciones de devolución de llamada.
+
+Este ejemplo funciona así: se desea transferir una cantidad específica de dinero a otra cuenta bancaria. El banco aplica una comisión específica según la cantidad transferida, y aquí entra en juego la callback function. Esta toma la cantidad de dinero a transferir y le aplica la comisión bancaria para obtener el importe total.
+
+La <code>TransferMoney</code> function toma dos parámetros: el primero es el dinero a transferir y el segundo es una función de devolución de llamada con la firma <code>Double => Double</code>, que la función aplica al argumento de dinero para determinar la comisión bancaria sobre el dinero transferido.
+
+The complete source code of the preceding examples can be seen as follow (we called methods using some real values):
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/higherOrderFunction.png)
+
+By using callback functions, you are giving extra power to the higher-order function; so, it's a very powerful mechanism to make your program more elegant, flexible, and efficient.
+
+## Function as a return value
+
+As mentioned, higher-order functions also support returning a function as a result. Let's demonstrate this by an example:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/FunctionAsReturnValue.png)
 
