@@ -260,3 +260,30 @@ As mentioned, higher-order functions also support returning a function as a resu
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/FunctionAsReturnValue.png)
 
+## Using higher-order function
+
+Imagina que trabajas como chef en un restaurante y uno de tus compañeros te pregunta:
+Implementa una **HOF (higher-order-function)** que realice currying. ¿Buscas pistas?
+Imagina que tienes las dos siguientes firmas para tu HOF:
+
+```
+def curry[X, Y, Z](f: (X, Y) => Z): X => Y => Z
+```
+
+Del mismo modo, impementa una función que use uncurrying de la siguiente forma:
+
+```
+def uncurry [X, Y, Z](f:X => Y => Z): (X, Y) => Z
+```
+
+Ahora bien, ¿cómo se podrían usar HOFs para realizar la operación de currying? Bueno, se podría crear un trait que encapsule las firmas de dos HOFs (es decir, curry y uncurry) de la siguiente manera:
+
+```
+trait Curry {
+	def curry [A, B, C](f: (A, B) => C): A => B => C
+	def uncurry [A, B, C](f: A => B => C): (A, B) => C
+}
+```
+
+Now, you can implement and extends this trait as an object as follow:
+

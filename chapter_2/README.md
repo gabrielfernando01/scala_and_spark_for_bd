@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/cover.png)
+
 # 2. Object-Oriented Scala 🟥.
 
 Considering the preceding features of OOP languages, in this chapter, we will discuss the basic object-oriented features in Scala 🟥. In a nutshell, the following topics will be covered in this chapter: 
