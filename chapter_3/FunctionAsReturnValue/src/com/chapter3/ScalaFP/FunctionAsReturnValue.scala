@@ -16,3 +16,4 @@ object FunctionAsReturnValue {
     println(returnedFunction(1500))   // Prints: "Dear customer, we are going to add following amount as Fee: 75.0"
   }
 }
+

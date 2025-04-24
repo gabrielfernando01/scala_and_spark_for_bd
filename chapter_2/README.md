@@ -31,7 +31,7 @@ In Scala 🟥 variables, we can three differentes scopes, depending on the place
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/data_type.png)
 
-## Methods, classes, and object in Scala 🟥.
+## 🌎 Methods, classes, and object in Scala.
 
 ### Methods in Scala 🟥.
 
@@ -56,7 +56,7 @@ Moreover, it has a deep connection with the uniform access principle. Thus, you 
 
 There are also some methods which return the value by explicitly mentioning the return types. For example:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/method_return_type.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/hello.png)
 
 ### The return in Scala 🟥.
 
@@ -91,7 +91,7 @@ This hello world example is pretty similar to the Java ones. The only big differ
 - ✨ As in OOP, an object can represent an instance of a class.
 - ⚡ A keyword for depicting a very different type of instance object called **Singleton**.
 
-### Singlenton and companion objects.
+### 🌍 Singlenton and companion objects.
 
 In this subsection, we will see a comparative analysis between the singleton object in Scala 🟥 and Java ☕. The idea beneath the singleton pattern is to have an implementation that makes sure that only a single instance of a class can exist. Here's an example of the Singleton pattern in Java ☕:
 
@@ -101,7 +101,7 @@ The Scala 🟥 object does a similar thing, and it's well taken care of by the c
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_scala.png)
 
-### Companion objects.
+### 🌍 Companion objects.
 
 When a <code>singleton object</code> is named the same as a class, it is called a <code>companion object</code>. A companion object must be defined inside the same source file as the class. Let's demonstrate this with the example here 👇🏼:
 
