@@ -195,7 +195,7 @@ En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliz
 - Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
 - En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como <code>Calculadora.suma(5, 3)</code>.
 
-### Traits ⌚
+### Traits ⌚7
 
 Scala 🟥 provides a great functionality for you in order to extends and enrich your classes behaviors. These traits are similar to the interfaces in which you define the function prototype or signature.
 
