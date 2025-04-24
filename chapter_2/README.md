@@ -62,7 +62,7 @@ There are also some methods which return the value by explicitly mentioning the 
 
 Before learning how a Scala 🟥 method returns a value, let's recap the structure of a method in Scala:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/structure_method.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/return_value.png)
 
 Now, let's define a method that adds two positive integers and returns the result, which is also an integer value:
 
