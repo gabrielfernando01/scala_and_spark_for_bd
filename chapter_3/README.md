@@ -1,8 +1,8 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/cover_chapter3.png)
 
-# Fuctional Programming Concepts.
+# 🚀 Fuctional Programming Concepts.
 
-**Que son las higher-order (HOF) functions?**
+**📣¿Que son las higher-order (HOF) functions?**
 
 Las higher-order functions son funciones que cumplen al menos una de estas condiciones:
 
