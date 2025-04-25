@@ -2,7 +2,7 @@
 
 # 🚀 Fuctional Programming Concepts.
 
-**📣¿Que son las higher-order (HOF) functions?**
+**📣 ¿Que son las higher-order (HOF) functions?**
 
 Las higher-order functions son funciones que cumplen al menos una de estas condiciones:
 
@@ -60,9 +60,9 @@ In a nutshell, the following topics will be covered in this chapter:
 
 This is not a new concept but the <code>Lambda Calculus</code>, which provides the basis of FP, was first introduced in the 1930s. However, in the realm of programming language, the term functional programming refers to a new style of declarative programming paradigm that means programming can be done with the help of control, declarations, or expressions instead of classical statements commonly used in an old programming language, such as C.
 
-## Why Spark ⭐?.
+## ⭐ Why Spark?.
 
-As mentioned earlier, Spark is built on top of the Hadoop 🐘 software and you can deploy Spark ⭐ in different ways:
+As mentioned earlier, Spark ⭐ is built on top of the Hadoop 🐘 software and you can deploy Spark ⭐ in different ways:
 
 - **Standalone cluster**: This means that Spark will run on top of Hadoop Distributed File System (HDFS) and space will actually be allocated to HDFS. Spark and MapReduce will run side by side to serve all the Spark jobs.
 - **Hadoop YARN cluster**: This means that Spark simply runs on YARN without any root privileges or pre-installations.
@@ -72,7 +72,7 @@ Mesos on your machine.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/arquitectura.png)
 
-## Pure function and higher-order function.
+## 🍔 Pure function and higher-order function.
 
 Using a higher-order function is a function one of the following can be
 performed:
@@ -82,7 +82,7 @@ performed:
 
 Todas las demás funciones, excepto las de orden superior, son funciones de primer orden. Sin embargo, desde una perspectiva matemática, las funciones de orden superior también se denominan operadores o funcionales. Por otro lado, si el valor de retorno de una función solo está determinado por su entrada y, por supuesto, sin efectos secundarios observables, se denomina función pura.
 
-## Pure functions.
+## 🍟 Pure functions.
 
 Normalmente, las funciones puras son más pequeñas que las funciones normales (aunque esto depende de otros factores, como el lenguaje de programación) e incluso más fáciles de interpretar y comprender para el cerebro humano, ya que se asemejan a una función matemática.
 
@@ -143,7 +143,7 @@ Ya se afirmó en el capítulo anterior que un objeto es una instancia de una cla
 
 Ahora es momento de aprender sobre funciones de orden superior. Sin embargo, antes de eso, debemos aprender un concepto más importante en Scala funcional: las **funciones anónimas**. Con esto, también aprenderemos a usar la expresión lambda con Scala funcional.
 
-## Anonymous functions
+## 😎 Anonymous functions.
 
 A veces, en tu código, no conviene definir una función antes de usarla, quizás porque la usarás en un solo lugar. En programación funcional, existe un tipo de función muy adecuado para esta situación: la función anónima. Demostremos el uso de funciones anónimas con el ejemplo anterior de transferencia de dinero:
 
@@ -254,13 +254,13 @@ The complete source code of the preceding examples can be seen as follow (we cal
 
 By using callback functions, you are giving extra power to the higher-order function; so, it's a very powerful mechanism to make your program more elegant, flexible, and efficient.
 
-## Function as a return value
+## 🍕 Function as a return value.
 
 As mentioned, higher-order functions also support returning a function as a result. Let's demonstrate this by an example:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_3/image/FunctionAsReturnValue.png)
 
-## Using higher-order function
+## 🥑 Using higher-order function.
 
 Imagina que trabajas como chef en un restaurante y uno de tus compañeros te pregunta:
 Implementa una **HOF (higher-order-function)** que realice currying. ¿Buscas pistas?
