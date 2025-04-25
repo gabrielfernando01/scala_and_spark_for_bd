@@ -66,7 +66,7 @@ Before learning how a Scala 🟥 method returns a value, let's recap the structu
 
 Now, let's define a method that adds two positive integers and returns the result, which is also an integer value:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/return_scala.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/addTwo.png)
 
 As using the keyword <code>return</code> is optional, in Scala 🟥 compiler is designed such that the last assignment will be returned with the absence of the <code>return</code> keyword.
 
@@ -76,7 +76,7 @@ Well done! Now, its time to see how to encapsulate them inside Scala  🟥 metho
 
 Classes are considered as a blueprint and then you instantiate this class in order to create something that will actually be represented in memory. They can contain methods, values, variables, types, objects, traits, and classes which are collectively called **members**. Let's demonstrate this with the following example:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/class_Animal00.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/classAnimal.png)
 
 We have two variables <code>animalName</code> **and** <code>animalAge</code> with their setters and getters. Now, how do we use them to solve our purpose? Here come the usages of Scala 🟥 objects. Now, we will discuss Scala objects, then we will trace back to our next discussion.
 
