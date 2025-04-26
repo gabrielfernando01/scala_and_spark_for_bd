@@ -6,7 +6,7 @@ Considering the preceding features of OOP languages, in this chapter, we will di
 
 - 🟪 Variable in Scala.
 - 🔵 Methods, classes, and objects in Scala.
-- 🔸 Packages and package objects.
+- 😎 Packages and package objects.
 - 🔷 Traits and trait linerization.
 - ☕ Java Interoperability.
 
@@ -19,7 +19,7 @@ The formal syntax of declaring a variable in Scala 🟥 is as follows:
 There are two types of variables in Scala 🟥: mutable and immutable that can be defined as follows:
 
 - 🔵 **Mutable:** The ones whose values you can change later.
-- 🟣 **Immutable:** The ones whose values you cannot change once they habe been set.
+- 🟣 **Immutable:** The ones whose values you cannot change once they have been set.
 
 In Scala 🟥 variables, we can three differentes scopes, depending on the place where you have declared them:
 
@@ -27,13 +27,13 @@ In Scala 🟥 variables, we can three differentes scopes, depending on the place
 - 🔴 **Methods arguments:** These are variables, and when the method is called, these can be used to pass the value inside a method.
 - 💡 **Local variables:** These variables are declared inside a method and are accessible from the inside the method itself.
 
-### Data types in Scala 🟥.
+### 🐶 Data types in Scala.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/data_type.png)
 
 ## 🌎 Methods, classes, and object in Scala.
 
-### Methods in Scala 🟥.
+### 🤖 Methods in Scala.
 
 ```
 def min(x1: Int, x2: Int): Int = {
@@ -58,7 +58,7 @@ There are also some methods which return the value by explicitly mentioning the 
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/hello.png)
 
-### The return in Scala 🟥.
+### 🔥 The return in Scala.
 
 Before learning how a Scala 🟥 method returns a value, let's recap the structure of a method in Scala:
 
@@ -80,7 +80,7 @@ Classes are considered as a blueprint and then you instantiate this class in ord
 
 We have two variables <code>animalName</code> **and** <code>animalAge</code> with their setters and getters. Now, how do we use them to solve our purpose? Here come the usages of Scala 🟥 objects. Now, we will discuss Scala objects, then we will trace back to our next discussion.
 
-### Objects in Scala 🟥.
+### 🦋 Objects in Scala.
 
 An **object** in Scala 🟥 has a slightly different meaning than the traditional OOP one, and this difference should be explained. In particular, in OOP, an object is an instance of a class, while in Scala 🟥, anything that is declared as an object cannot be instantiated! The <code>object</code> is a keyword in Scala. The basic syntax for declaring an object in Scala is as follows:
 
@@ -95,7 +95,7 @@ This hello world example is pretty similar to the Java ones. The only big differ
 
 In this subsection, we will see a comparative analysis between the singleton object in Scala 🟥 and Java ☕. The idea beneath the singleton pattern is to have an implementation that makes sure that only a single instance of a class can exist. Here's an example of the Singleton pattern in Java ☕:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/singlenton_java.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/DBConnection.png)
 
 The Scala 🟥 object does a similar thing, and it's well taken care of by the compiler. Since there will be only one instance, there is no way for object creation here:
 
@@ -109,6 +109,8 @@ When a <code>singleton object</code> is named the same as a class, it is called 
 
 A Java ☕ equivalent would be similar, as follow 👇🏼:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/companion_object_java.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/java_companion.png)
+
+
 
 
