@@ -7,7 +7,7 @@ Hadoop ocupa el modelo MapReduce (MapeoReducción) y dos de sus limitaciones son
     🔸 Rendimiento: Es lento por que escribe resultados intermedios en disco.
     🔸 Flexibilidad: No es ideal para tareas iterativas (e.g. ml) o flujos cíclicos, ya que su diseño es inherentemente acíclico.
 
-Modelo en Spark 💥: RDDs y DAGs.
+Modelo en Spark ⭐: RDDs y DAGs.
 
 1. RDDs (Resilient Distributed Datasets):
 
@@ -16,7 +16,7 @@ RDDs es una abstracción de datos distribuidos y tolerate a fallos. Un RDD es un
 Propiedades:
 
     🚀 Inmutables: No se modifican una vez creados.
-    🚀 Resilientes: Si un nodo falla, Spark 💥 puede reconstruir los datos perdidos gracias a un linaje (historia de transformaciones).
+    🚀 Resilientes: Si un nodo falla, Spark ⭐ puede reconstruir los datos perdidos gracias a un linaje (historia de transformaciones).
     🚀 En memoria: Los RDDs se almacenan en la RAM siempre que sea posible, lo que reduce la dependencia de lecturas/escrituras en disco.
 
 Operaciones:
@@ -27,10 +27,17 @@ Operaciones:
 
 2. DAG (Directed Acyclic Graph).
 
-DAGs en Spark 💥 construye un grafo acíclico dirigido que representa la secuencia de transfomación aplicada a los datos. Este DAG describe el flujo de tragajo completo.
+DAGs en Spark ⭐ construye un grafo acíclico dirigido que representa la secuencia de transfomación aplicada a los datos. Este DAG describe el flujo de tragajo completo.
 
-En lugar de forzar en dos etapas como MapReduce, Spark 💥 optimiza el flujo de datos permitiendo múltiples Transformaciones consecutivas sin necesidad de escribir resultados intermedios en disco.
+En lugar de forzar en dos etapas como MapReduce, Spark ⭐ optimiza el flujo de datos permitiendo múltiples Transformaciones consecutivas sin necesidad de escribir resultados intermedios en disco.
 
-Ejemplo: Si filtras datos, los agrupas y luego los sumas, Spark 💥 crea un DAG con operaciones y lo ejecuta de forma eficiente en una sola pasada cuando se invoca una acción.
+Ejemplo: Si filtras datos, los agrupas y luego los sumas, Spark ⭐ crea un DAG con operaciones y lo ejecuta de forma eficiente en una sola pasada cuando se invoca una acción.
+
+# ===============================================================================================================================================
+// Cuando creagmos un singlenton se ejecuta en REPL:
+scala > object.main(Array())
+
+// Si creamos una clase se ejecuta en REPL:
+scala > main(Array())
 
 

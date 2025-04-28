@@ -1,8 +1,21 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/cover.png)
 
-# Scala 🟥 and Spark ⭐ for BigData. 
+# 🚀 Scala and Spark for BigData.
 
-## Installing and setting up Scala 🟥⚙️🪛.
+## 🎓 History and purpose of Scala.
+
+Scala 🟥 is a general-purpose programming language that comes with support <code>functional programming</code> and strong <code>static type</code> system. The source code of Scala 🟥 is intended to be compiled into <code>Java</code> bytecode, so that the resulting executable code can be run on <code>Java virtual machine</code> (JVM).
+
+Martin Odersky started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
+
+## 🗒️ Platform and editors.
+
+En mi caso y en este momento uso:
+
+- 🍥 nvim 11.
+- 🟧 IntelliJ Idea 24.1
+
+## 🪛 Installing and setting up Scala.
 
 Before starting, I share with you that the configuration I am going to use is:
 
@@ -10,13 +23,13 @@ Before starting, I share with you that the configuration I am going to use is:
 - 🟥 Scala 2.13.8
 - ⭐ Spark 3.5.1
 
-### Installing Java ☕.
+### 👷🏼‍♂️ Installing Java.
 
  At first, check whether Java is already installed:
  
  <code>$ java -version</code>
  
- If it returns <code>The program java cannot be found in the following packages</code>, Java hasn't been installed yet. Then you would like to execute the following command to get rid of:
+ If it returns <code>The program java cannot be found in the following packages</code>, Java ☕ hasn't been installed yet. Then you would like to execute the following command to get rid of:
 
 ```
 $ sudo apt update
@@ -59,9 +72,9 @@ openjdk version "11.0.26" 2025-01-25
 OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 ```
 
-### Installing Scala 🟥.
+### 🔥 Installing Scala.
 
- Before starting, let's check to make sure Scala is installed properly.
+Before starting, let's check to make sure Scala is installed properly.
  
  <code>$ scala -version</code>
  
@@ -69,7 +82,7 @@ If Scala 🟥 is already installed on your system, you should get the following 
 
 <code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
-Scala no está disponible en los repositorios oficiales de Ubuntu, por lo que necesitas descargarlo manualmente desde el sitio oficial. 
+Scala 🟥 no está disponible en los repositorios oficiales de Ubuntu, por lo que necesitas descargarlo manualmente desde el sitio oficial. 
 
 1. Go 👉🏼 to the official Scala website: [Scala](https://www.scala-lang.org/).
 2. Find version 2.13.8 and copy the download link of the file <code>.tgz</code>.
@@ -123,7 +136,7 @@ val my_list = List(3, 6, 15, 35, 76)
 val my_resu1lt = 5 +: my_list			// The outpus is List(5, 3, 6, 15, 35, 76) 
 ```
 
-### Methods and parameter lists 📋.
+### 📋 Methods and parameter lists.
 
 In Scala 🟥, the following is the valid method definition (written in _currie notation_) where a method has two parameter lists:
 
@@ -140,18 +153,24 @@ val sum2 = sum(2) _
 val result = sum2(5)
 ```
 
-### Constructor in Scala 🟥.
+### 🧵 Constructor in Scala.
 
 **Constructor in Java ☕**
 
 In Java ☕, the constructor is a special method that has the same name as the class and is used to initialize objects.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/java_constructor.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/personConstructorJava.png)
 
 Explicación:
 
 - El constructor <code>Persona(String nombre, int edad)</code> inicializan los atributos <code>nombre</code> y <code>edad</code>.
 - Para crear un objeto, se usa <code>new Persona("Juan", 25)</code>, donde se pasan los valores al constructor.
+
+Para ejecutar el anterior 👆🏼 script escrubimos en <code>jshell</code>
+
+```
+jshell > Person.main(null);
+```
 
 ***
 
@@ -167,6 +186,12 @@ Explicación:
 - En Scala 🟥, el constructor principal está definido en la línea <code>class Persona(val nombre: String, val edad: Int)</code>.
 - Los parámetros <code>nombre</code> y <code>edad</code> son automáticamente miembros de la clase porque están marcados con <code>val</code>.
 - No es necesario escribir un cuerpo de constructor explícito para inicializar los atributos.
+
+Para ejecutar el anterior 👆🏼 script en Scala escribimos:
+
+```
+scala > main(Array())
+```
 
 ### 🚀 Objects instead of static methods.
 

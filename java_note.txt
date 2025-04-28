@@ -1,0 +1,11 @@
+# ==========================================================================================
+
+// Create a generic class in jshell: Person.java
+jshell  > public class Person {
+    ... > private String name;
+    ... > ...
+    ... > }
+
+// el método main esta dentro de la clase Person
+// para ejecutar el script usamos:
+jshell > Person.main(null);
