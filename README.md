@@ -155,39 +155,16 @@ val result = sum2(5)
 
 ### 🧵 Constructor in Scala.
 
-**Constructor in Java ☕**
+Hago un constraste de como se escribe una clase en Java y en Scala:
 
-In Java ☕, the constructor is a special method that has the same name as the class and is used to initialize objects.
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/constructor_java_vs_scala.png)
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/personConstructorJava.png)
-
-Explicación:
-
-- El constructor <code>Persona(String nombre, int edad)</code> inicializan los atributos <code>nombre</code> y <code>edad</code>.
-- Para crear un objeto, se usa <code>new Persona("Juan", 25)</code>, donde se pasan los valores al constructor.
-
-Para ejecutar el anterior 👆🏼 script escrubimos en <code>jshell</code>
+Ahora para ejecutar los script correspondientes usamos en el REPL o consola interactiva correspondiente:
 
 ```
 jshell > Person.main(null);
 ```
 
-***
-
-**Constructor en Scala 🟥**
-
-En Scala 🟥, el constructor principal está integrado directamente en la definición de la clase. Los parámetros del constructor se declaran junto con la clase, y estos parámetros pueden ser automáticamente miembros de la clase si se marcan como <code>val</code> o <code>var</code>.
-
-
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/scala_constructor.png)
-
-Explicación:
-
-- En Scala 🟥, el constructor principal está definido en la línea <code>class Persona(val nombre: String, val edad: Int)</code>.
-- Los parámetros <code>nombre</code> y <code>edad</code> son automáticamente miembros de la clase porque están marcados con <code>val</code>.
-- No es necesario escribir un cuerpo de constructor explícito para inicializar los atributos.
-
-Para ejecutar el anterior 👆🏼 script en Scala escribimos:
 
 ```
 scala > main(Array())

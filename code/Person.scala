@@ -1,7 +1,9 @@
+
 class Person(val name: String, val age: Int) {
   def showInfo(): Unit = {
-    println("Name: " + name + ", Age: " + age + "...")
+    println("Name: " + name + ", Age: " + age + ".")
   }
+}
 
   object Person {
     def main(args: Array[String]): Unit = {
@@ -9,4 +11,6 @@ class Person(val name: String, val age: Int) {
       person.showInfo()
     }
   }
-}
+
+
+
