@@ -167,7 +167,7 @@ jshell > Person.main(null);
 
 
 ```
-scala > main(Array())
+scala > Person.main(Array())
 ```
 
 ### 🚀 Objects instead of static methods.
