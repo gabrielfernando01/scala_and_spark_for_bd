@@ -170,32 +170,18 @@ jshell > Person.main(null);
 scala > Person.main(Array())
 ```
 
-### 🚀 Objects instead of static methods.
+**Nota**: En el ejemplo un singlenton de Scala no puede instanciarce, aunque en este caso se esta instanciando a la clase <code>Person</code>
 
-As mentioned earlier, <code>static</code> does not exist in Scala 🟥. You cannot do <code>static</code> imports and neither can you cannot add static methods to classes. In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. 
+### 🚀 Objectos (Scala) en vez de métodos estáticos (Java).
 
-**Ejemplo en Java ☕: Método Estático.**
+En Scala no existe el método estático, lo que hacemos es definir un <code>object</code>, es decir, un singlenton y dentro del él definimos las funciones (que son los equivalentes a los métodos estáticos en Java), en el siguiente ejemplo se llama a los métodos <code>sum</code> y <code>main</code>.
 
-En Java ☕, un método estático pertenece a la clase en lugar de a una instancia específica. Esto significa que puedes llamar al método sin necesidad de crear un objeto de la clase.
+También comento que en Java lo que hacemos es llamar al método sin necesidad de crear un objeto.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/static_method_java.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton.png)
 
-- El método <code>suma</code> es estático (<code>static</code>), lo que significa que no nece	sitas crear una instancia de la clase <code>calculadora</code> para usarlo.
-- Puedes llamar al método directamente usando el nombre de la clase: <code>Calculadora.sum(5, 3)</code>.
+- Nuevamente insistir en que en Scala solo se ocupa crear un singlenton (un <code>object</code>) para llamar a las funciones.
 
-***
-
-In Scala 🟥, when you define an object with the same name as the class and in the same source file, then the object is said to be the companion of that class. Functions that you define in this companion object of a class are like static methods of a class in Java ☕:
-
-En Scala, no existe la palabra clave <code>static</code>. En su lugar, se utiliza un **objeto singleton** (un objeto definido con la palabra clave <code>object</code>) para lograr un comportamiento similar al de los métodos estáticos en Java ☕.
-
-**Código en Scala 🟥:**
-
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton_object.png)
-
-- En Scala 🟥, un </code>object</code> es un singleton, lo que significa que solo puede existir una instancia de ese objeto en todo el programa.
-- Los métodos definidos dentro de un </code>object</code> son accesibles directamente, sin necesidad de crear una instancia, lo que los hace equivalentes a los métodos estáticos en Java.
-- En este caso, el método <code>suma</code> se define dentro del objeto <code>Calculadora</code>, y puedes llamarlo directamente como <code>Calculadora.suma(5, 3)</code>.
 
 ### Traits ⌚7
 
