@@ -3,7 +3,6 @@ public class DBConnection {
     private static DBConnection dbInstance;
 
     private DBConnection() {
-        // Constructor privado
     }
 
     public static DBConnection getInstance() {
@@ -13,4 +12,5 @@ public class DBConnection {
         return dbInstance;
     }
 }
+
 

@@ -174,7 +174,7 @@ scala > Person.main(Array())
 
 Escribo otro caso de singlenton 👇🏼 para Java:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton_java.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/Constructor_java.png)
 
 ### 🚀 Objectos (Scala) en vez de métodos estáticos (Java).
 
