@@ -170,7 +170,11 @@ jshell > Person.main(null);
 scala > Person.main(Array())
 ```
 
-**Nota**: En el ejemplo un singlenton de Scala no puede instanciarce, aunque en este caso se esta instanciando a la clase <code>Person</code>
+**Nota**: En el ejemplo un singlenton de Scala no puede instanciarce, aunque en este caso se esta instanciando a la clase <code>Person</code>.
+
+Escribo otro caso de singlenton 👇🏼 para Java:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton_java.png)
 
 ### 🚀 Objectos (Scala) en vez de métodos estáticos (Java).
 
@@ -180,8 +184,8 @@ También comento que en Java lo que hacemos es llamar al método sin necesidad d
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton.png)
 
-- Nuevamente insistir en que en Scala solo se ocupa crear un singlenton (un <code>object</code>) para llamar a las funciones.
-
+- Insistir en que en Scala solo se ocupa crear un singlenton (un <code>object</code>) para llamar a las funciones.
+- En los ejemplos se dan expresiones numericas particulares para ejecutar el ejercicio.
 
 ### Traits ⌚7
 
