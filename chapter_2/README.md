@@ -2,6 +2,10 @@
 
 # 2. Object-Oriented Scala 🟥.
 
+**Recapitulando**
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/index02_00.png)
+
 Considering the preceding features of OOP languages, in this chapter, we will discuss the basic object-oriented features in Scala 🟥. In a nutshell, the following topics will be covered in this chapter: 
 
 - 🟪 Variable in Scala.
@@ -71,6 +75,12 @@ Now, let's define a method that adds two positive integers and returns the resul
 As using the keyword <code>return</code> is optional, in Scala 🟥 compiler is designed such that the last assignment will be returned with the absence of the <code>return</code> keyword.
 
 Well done! Now, its time to see how to encapsulate them inside Scala  🟥 method and classes. The next section discusses Scala 🟥 objects.
+
+***
+
+**Recapitulando**
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/chapter_2/image/index02_01.png)
 
 ### Classes in Scala 🟥.
 
