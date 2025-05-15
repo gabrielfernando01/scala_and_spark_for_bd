@@ -2,6 +2,14 @@
 
 # 🚀 Scala and Spark for BigData.
 
+## Index
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/index00.png)
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/index01.png)
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/index02.png)
+
 ## 🎓 History and purpose of Scala.
 
 Scala 🟥 is a general-purpose programming language that comes with support <code>functional programming</code> and strong <code>static type</code> system. The source code of Scala 🟥 is intended to be compiled into <code>Java</code> bytecode, so that the resulting executable code can be run on <code>Java virtual machine</code> (JVM).
