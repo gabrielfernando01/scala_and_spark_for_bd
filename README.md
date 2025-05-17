@@ -56,10 +56,11 @@ You should see something like:
 
 And we declare.
 
+Bash
 ```
-$ echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
-$ echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
-$ source ~/.bashrc
+echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
+echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 Now, let's see the <code>Java_HOME</code> as follows:
