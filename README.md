@@ -33,6 +33,17 @@ Before starting, I share with you that the configuration I am going to use is:
 
 ### 👷🏼‍♂️ Installing Java.
 
+**Antes de empezar**
+
+¿Que arquitectura tengo?
+
+Bash
+```
+lscpu
+```
+
+
+
  At first, check whether Java is already installed:
  
  <code>$ java -version</code>
@@ -58,18 +69,19 @@ Ahora editamos el fichero <code>.bashrc</code> o el fichero <code>.profile</code
 
 Al final del fichero escribimos:
 ```
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-opengldk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-Guardamos los cambios en bash con:
+Para que los cambios en el fichero <code>~/.bashrc</code> sean permanentes, escribimos:
 
+Bash
 ```
 source ~/.bashrc
 ```
 
 
-Now, let's see the <code>Java_HOME</code> as follows:
+Verifica que las variables estén configuradas correctamente:
 
 <code>$ echo $JAVA_HOME</code>
 
