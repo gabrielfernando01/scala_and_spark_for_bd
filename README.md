@@ -14,14 +14,14 @@
 
 Scala 🟥 is a general-purpose programming language that comes with support <code>functional programming</code> and strong <code>static type</code> system. The source code of Scala 🟥 is intended to be compiled into <code>Java</code> bytecode, so that the resulting executable code can be run on <code>Java virtual machine</code> (JVM).
 
-Martin Odersky started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
+**Martin Odersky** started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
 
 ## 🗒️ Platform and editors.
 
 En mi caso y en este momento uso:
 
 - 🍥 nvim 11.
-- 🟧 IntelliJ Idea 24.1
+- 🟧 IntelliJ IDEA 24.1
 
 ## 🪛 Installing and setting up Scala.
 
@@ -37,12 +37,13 @@ Before starting, I share with you that the configuration I am going to use is:
  
  <code>$ java -version</code>
  
- If it returns <code>The program java cannot be found in the following packages</code>, Java ☕ hasn't been installed yet. Then you would like to execute the following command to get rid of:
+If it returns <code>The program java cannot be found in the following packages</code>, Java ☕ hasn't been installed yet. Then you would like to execute the following command to get rid of:
 
+Bash
 ```
-$ sudo apt update
-$ sudo apt install openjdk-11-jdk
-$ java -version
+sudo apt update
+sudo apt install openjdk-11-jdk
+java -version
 ```
 
 After installing, don't forget to set the Java home environmental variable. Just apply the following commands:
