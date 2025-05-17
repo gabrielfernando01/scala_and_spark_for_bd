@@ -54,14 +54,20 @@ You should see something like:
 
 <code>java-11-openjdk-amd64</code>
 
-And we declare.
+Ahora editamos el fichero <code>.bashrc</code> o el fichero <code>.profile</code>
 
-Bash
+Al final del fichero escribimos:
 ```
-echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
-echo "export PATH=$PATH:$JAVA_HOME/bin" >> ~/.bashrc
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+Guardamos los cambios en bash con:
+
+```
 source ~/.bashrc
 ```
+
 
 Now, let's see the <code>Java_HOME</code> as follows:
 
