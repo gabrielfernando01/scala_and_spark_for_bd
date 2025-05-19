@@ -16,9 +16,7 @@ Scala 🟥 is a general-purpose programming language that comes with support <co
 
 **Martin Odersky** started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
 
-## 🗒️ Platform and editors.
-
-En mi caso y en este momento uso:
+## 🗒️ IDE and text editor.
 
 - 🍥 nvim 11.
 - 🟧 IntelliJ IDEA 24.1
@@ -100,6 +98,43 @@ openjdk version "11.0.26" 2025-01-25
 OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 ```
 
+***
+
+**Cuando necesites desistalar Java**
+
+⛏️ Identifica el paquete instalado
+
+Bash
+```
+dpkg --list | grep instalado
+```
+
+🔩 Desistalamos el paquete, eliminamos los archivos de configuración, limpar paquetes residuales
+
+Bash
+```
+sudo apt remove <java_version>
+sudo apt purge <java_version>
+sudo apt autoremove<java_version>
+```
+
+🐸 Valar qu java está desistalado:
+
+
+Bash
+```
+java --version
+```
+
+📌 Comentar o eliminar los <code>export PATH</code> dentro del fichero <code>bashrc</code>
+
+🍑 Validar que el <code>PATH</code> se elimino correctamente:
+
+Bash
+```
+echo $JAVA_HOME
+```
+
 ### 🔥 Installing Scala.
 
 Before starting, let's check to make sure Scala is installed properly.
@@ -110,7 +145,7 @@ If Scala 🟥 is already installed on your system, you should get the following 
 
 <code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
 
-Scala 🟥 no está disponible en los repositorios oficiales de Ubuntu, por lo que necesitas descargarlo manualmente desde el sitio oficial. 
+Ubuntu solo ofrece la última versión estable de Scala, 
 
 1. Go 👉🏼 to the official Scala website: [Scala](https://www.scala-lang.org/).
 2. Find version 2.13.8 and copy the download link of the file <code>.tgz</code>.
