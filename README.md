@@ -40,9 +40,7 @@ Bash
 lscpu
 ```
 
-
-
- At first, check whether Java is already installed:
+At first, check whether Java is already installed:
  
  <code>$ java -version</code>
  
@@ -52,7 +50,7 @@ Bash
 ```
 sudo apt update
 sudo apt install openjdk-11-jdk
-java -version
+java --version
 ```
 
 After installing, don't forget to set the Java home environmental variable. Just apply the following commands:
@@ -78,7 +76,6 @@ Bash
 source ~/.bashrc
 ```
 
-
 Verifica que las variables estén configuradas correctamente:
 
 <code>$ echo $JAVA_HOME</code>
@@ -100,9 +97,9 @@ OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 
 ***
 
-**Cuando necesites desistalar Java**
+**☕ Cuando necesites desistalar Java**
 
-⛏️ Identifica el paquete instalado
+⛏️ Identifica el paquete instalado.
 
 Bash
 ```
@@ -115,10 +112,10 @@ Bash
 ```
 sudo apt remove <java_version>
 sudo apt purge <java_version>
-sudo apt autoremove<java_version>
+sudo apt autoremove <java_version>
 ```
 
-🐸 Valar qu java está desistalado:
+🐸 Validar que Java está desistalado:
 
 
 Bash
@@ -126,7 +123,7 @@ Bash
 java --version
 ```
 
-📌 Comentar o eliminar los <code>export PATH</code> dentro del fichero <code>bashrc</code>
+📌 Comentar o eliminar los <code>export PATH</code> dentro del fichero <code>.bashrc</code>
 
 🍑 Validar que el <code>PATH</code> se elimino correctamente:
 
@@ -137,9 +134,22 @@ echo $JAVA_HOME
 
 ### 🔥 Installing Scala.
 
+Validar que tengas instalado curl:
+
+Bash
+```
+curl --version
+```
+
 Before starting, let's check to make sure Scala is installed properly.
  
  <code>$ scala -version</code>
+ 
+ **De cuantas maneras puedo descargar Scala en mi 💻?**
+ 
+ - Por <code>apt</code>, solo tiene la última version estable disponible.
+ - Por es sitio oficial 👉🏽 [Scala](https://www.scala-lang.org/)
+ - 
  
 If Scala 🟥 is already installed on your system, you should get the following message on your terminal:
 
