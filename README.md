@@ -134,26 +134,65 @@ echo $JAVA_HOME
 
 ### 🔥 Installing Scala.
 
-Validar que tengas instalado curl:
+**🎯 Antes de empezar**
+
+Validar que tengas instalado <code>sdk</code>, <code>coursier</code>, <code>curl</code>, <code>wget</code>.
 
 Bash
 ```
-curl --version
+sdk version      # Para ver si tienes SDKMAN!
+coursier --version   # Para Coursier CLI
+curl --version       # Para curl
+wget --version       # Para wget
 ```
 
 Before starting, let's check to make sure Scala is installed properly.
  
  <code>$ scala -version</code>
+
+If Scala 🟥 is already installed on your system, you should get the following message on your terminal:
+
+<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
  
  **De cuantas maneras puedo descargar Scala en mi 💻?**
  
  - Por <code>apt</code>, solo tiene la última version estable disponible.
- - Por es sitio oficial 👉🏽 [Scala](https://www.scala-lang.org/)
- - 
- 
-If Scala 🟥 is already installed on your system, you should get the following message on your terminal:
+ - Por es sitio oficial 👉🏽 [Scala](https://www.scala-lang.org/); <code>coursier</code>, <code>curl</code>, <code>wget</code>.
 
-<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
+**⚡ Requisitos previos**
+
+- Tener instalado JDK (Java Development Kit).
+
+```
+java --version
+```
+
+Mostrar la ruta del ejecutable:
+
+```
+update-alternatives --config java
+```
+
+**🔧 Instalar Coursier**
+
+Coursier es la herramienta oficial para instalar y gestionar Scala. Vamos a descargarlo e instalarlo.
+
+Descarga Coursier.- Ejecuta el siguiente comando para descargar el instalador de Coursier:
+
+Bash
+```
+curl -fL https://git.io/coursier-cli -o cs.jar
+```
+
+Permisos de ejecución:
+
+Bash
+```
+chmod +x cs
+```
+
+
+
 
 Ubuntu solo ofrece la última versión estable de Scala, 
 
