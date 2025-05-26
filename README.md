@@ -132,6 +132,8 @@ Bash
 echo $JAVA_HOME
 ```
 
+***
+
 ### 🔥 Installing Scala.
 
 **🎯 Antes de empezar**
@@ -157,11 +159,11 @@ If Scala 🟥 is already installed on your system, you should get the following 
  **De cuantas maneras puedo descargar Scala en mi 💻?**
  
  - Por <code>apt</code>, solo tiene la última version estable disponible.
- - Por es sitio oficial 👉🏽 [Scala](https://www.scala-lang.org/); <code>coursier</code>, <code>curl</code>, <code>wget</code>.
+ - Por es sitio oficial 👉🏽 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">Scala</a>; <code>coursier</code>, <code>curl</code>, <code>wget</code>.
 
 **⚡ Requisitos previos**
 
-- Tener instalado JDK (Java Development Kit).
+- Tener instalado JRE (Java Run Time Environment) o JDK (Java Development Kit).
 
 ```
 java --version
@@ -172,6 +174,15 @@ Mostrar la ruta del ejecutable:
 ```
 update-alternatives --config java
 ```
+
+📥 Paso 1: Descarga Scala desde scala-lang.org
+
+Regresando a la página oficial. En este caso descargamos la versión 2.13.8 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">
+
+Seleccionamos el fichero <code>scala-2.13.16.tgz</code>
+
+🗃️ Paso 2: Descomprime el archivo .tgz
+
 
 **🔧 Instalar Coursier**
 
