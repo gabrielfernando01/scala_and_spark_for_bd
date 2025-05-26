@@ -177,12 +177,62 @@ update-alternatives --config java
 
 📥 Paso 1: Descarga Scala desde scala-lang.org
 
-Regresando a la página oficial. En este caso descargamos la versión 2.13.8 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">
+Regresando a la página oficial. En este caso descargamos la versión 2.13.16 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">
 
 Seleccionamos el fichero <code>scala-2.13.16.tgz</code>
 
 🗃️ Paso 2: Descomprime el archivo .tgz
 
+Crea una carpeta donde quieras instalar Scala. Por ejemplo:
+
+Bash
+```
+sudo mkdir -p /usr/local/scala
+```
+
+Descomprime ahí el archivo:
+
+Bash
+```
+sudo tar -xvf scala-2.13.16.tgz -C /usr/local/scala --strip-components=1
+```
+
+🛠️ Paso 3: Configura las variables de entorno.
+
+Edita el archivo ~/.bashrc o ~/.zshrc dependiendo de tu shell. 
+
+Bash
+```
+nvim ~/.bashrc
+```
+
+Al final del fichero, agrega:
+
+```
+export SCALA_HOME=/usr/local/scala
+export PATH=$PATH:$SCALA_HOME/bin
+```
+
+🔁 Paso 4: Aplica los cambios
+
+Bash
+```
+source ~/.bashrc
+```
+
+✅ Paso 5: Verifica la instalación
+
+Bash
+```
+scala --version
+```
+
+Probar el REPL de Scala:
+
+Bash
+```
+scala
+```
 
 **🔧 Instalar Coursier**
 
