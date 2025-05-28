@@ -159,7 +159,7 @@ If Scala 🟥 is already installed on your system, you should get the following 
  **De cuantas maneras puedo descargar Scala en mi 💻?**
  
  - Por <code>apt</code>, solo tiene la última version estable disponible.
- - Por es sitio oficial 👉🏽 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">Scala</a>; <code>coursier</code>, <code>curl</code>, <code>wget</code>.
+ - Por es sitio oficial 👉🏽 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">Scala</a>; <code>coursier</code>, <code>sdk</code>, <code>curl</code>, <code>wget</code>.
 
 **⚡ Requisitos previos**
 
@@ -171,6 +171,7 @@ java --version
 
 Mostrar la ruta del ejecutable:
 
+Bash
 ```
 update-alternatives --config java
 ```
@@ -213,6 +214,14 @@ export SCALA_HOME=/usr/local/scala
 export PATH=$PATH:$SCALA_HOME/bin
 ```
 
+Validar ubicación del PATH:
+
+Bash
+```
+echo $SCALA_HOME
+```
+
+
 🔁 Paso 4: Aplica los cambios
 
 Bash
@@ -227,65 +236,63 @@ Bash
 scala --version
 ```
 
-Probar el REPL de Scala:
+Probar el REPL(Read-Eval-Print Loop) de Scala:
 
 Bash
 ```
 scala
 ```
 
-**🔧 Instalar Coursier**
+Salir de REPL
 
-Coursier es la herramienta oficial para instalar y gestionar Scala. Vamos a descargarlo e instalarlo.
+scala
+```
+:quit
+```
 
-Descarga Coursier.- Ejecuta el siguiente comando para descargar el instalador de Coursier:
+***
+
+**Desistalacińn Scala**
+
+🔍 1. Verifica cómo se instaló Scala (opcional pero útil).
 
 Bash
 ```
-curl -fL https://git.io/coursier-cli -o cs.jar
+which scala
 ```
 
-Permisos de ejecución:
+🚫 2. Elimina la carpeta donde está instalado Scala (instalación manual).
 
 Bash
 ```
-chmod +x cs
+sudo rm -rf /usr/local/scala
 ```
 
+🗑️ 3. Limpia las variables de entorno.
 
-
-
-Ubuntu solo ofrece la última versión estable de Scala, 
-
-1. Go 👉🏼 to the official Scala website: [Scala](https://www.scala-lang.org/).
-2. Find version 2.13.8 and copy the download link of the file <code>.tgz</code>.
-3. Extract the downloaded file
-
-Extract the <code>.tgz</code> file to a suitable directory, such as <code>/usr/local/scala:</code>
+Abrir el fichero <code>.bashrc</code> que es donde definimos <code>SCALA_HOME</code> y <code>PATH</code>. Yo uso <code>nvim</code> también puedes usar <code>nano</code> para editar el fichero, es decir, borrar o comentar las siguientes lineas:
 
 ```
-$ sudo mkdir -p /usr/local/share/scala
-$ sudo tar -xvzf scala-2.13.8.tgz -C /usr/local/share/scala
+export SCALA_HOME=/usr/local/scala
+export PATH=$PATH:$SCALA_HOME/bin
 ```
 
-4. Configurate envioronment variables:
+Guardar los cambios:
 
 ```
-$ echo "export SCALA_HOME=/usr/local/share/scala" >> ~/.bashrc
-$ echo "export PATH=$PATH:$SCALA_HOME/bin" >> ~/.bashrc
+source ~/.bashrc
 ```
 
-Then, make the change permanent for the session by using the following command:
+🧹 4. Eliminar posibles residuos como .sbt, .ivy2, etc., si no los necesitas:
 
-<code>$ source ~/.bashrc</code>
+Bash
+```
+rm -rf ~/.sbt ~/.ivy2 ~/.scala_history
+````
 
-After the installation has been completed, you should better to verify it using the following command:
+**Opcional**
 
-<code>$ scala -version</code>
-
-If Scala has successfully been configured on your system, you should get the following message on your terminal:
-
-<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
+Con SDKMAN puedes tener instalado Scala 2.12, 2.13 y 3.x al mismo tiempo y cambiar entre ellas fácilmente.
 
 ### ✨ Operators as methods.
 
