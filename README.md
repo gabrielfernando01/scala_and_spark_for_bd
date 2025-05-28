@@ -134,7 +134,7 @@ echo $JAVA_HOME
 
 ***
 
-### 🔥 Installing Scala.
+### 🔥 Install Scala.
 
 **🎯 Antes de empezar**
 
@@ -290,9 +290,24 @@ Bash
 rm -rf ~/.sbt ~/.ivy2 ~/.scala_history
 ````
 
+Validar que Scala se haya desistalado:
+
+Bash
+```
+scala --version
+```
+
 **Opcional**
 
 Con SDKMAN puedes tener instalado Scala 2.12, 2.13 y 3.x al mismo tiempo y cambiar entre ellas fácilmente.
+
+***
+
+### ⭐ Install Spark 3.5.1
+
+
+
+***
 
 ### ✨ Operators as methods.
 
