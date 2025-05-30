@@ -161,7 +161,7 @@ If Scala 🟥 is already installed on your system, you should get the following 
  **De cuantas maneras puedo descargar Scala en mi 💻?**
  
  - Por <code>apt</code>, solo tiene la última version estable disponible.
- - Por es sitio oficial 👉🏽 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">Scala</a>; <code>coursier</code>, <code>sdk</code>, <code>curl</code>, <code>wget</code>.
+ - Por el sitio oficial 👉🏽 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">Scala</a>; <code>coursier</code>, <code>sdk</code>, <code>curl</code>, <code>wget</code>.
 
 **⚡ Requisitos previos**
 
