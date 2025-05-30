@@ -21,6 +21,8 @@ Scala 🟥 is a general-purpose programming language that comes with support <co
 - 🍥 nvim 11.
 - 🟧 IntelliJ IDEA 24.1
 
+***
+
 ## 🪛 Installing and setting up Scala.
 
 Before starting, I share with you that the configuration I am going to use is:
@@ -178,7 +180,7 @@ update-alternatives --config java
 
 📥 Paso 1: Descarga Scala desde scala-lang.org
 
-Regresando a la página oficial. En este caso descargamos la versión 2.13.16 <a href="https://www.scala-lang.org/ " target="_blank" rel="noopener noreferrer">
+Regresando a la página oficial <a href="https://www.scala-lang.org/" target="_blank" rel="noopener noreferrer">Scala</a>. En este caso descargamos la versión 2.13.16 
 
 Seleccionamos el fichero <code>scala-2.13.16.tgz</code>
 
@@ -214,19 +216,18 @@ export SCALA_HOME=/usr/local/scala
 export PATH=$PATH:$SCALA_HOME/bin
 ```
 
-Validar ubicación del PATH:
-
-Bash
-```
-echo $SCALA_HOME
-```
-
-
 🔁 Paso 4: Aplica los cambios
 
 Bash
 ```
 source ~/.bashrc
+```
+
+Validar la ubicación del PATH:
+
+Bash
+```
+echo $SCALA_HOME
 ```
 
 ✅ Paso 5: Verifica la instalación
