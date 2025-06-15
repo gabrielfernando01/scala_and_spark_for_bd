@@ -1,3 +1,4 @@
+
 // Definimos un trait llamado "Volador"
 trait Volador {
   def volar(): String = "Estoy volando"  // Método concreto
@@ -17,5 +18,6 @@ object Ave {
     println(pajaro.aterrizar())  // Salida: He aterrizado suavemente
   }
 }
+
 
 

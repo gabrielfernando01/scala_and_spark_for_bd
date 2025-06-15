@@ -13,9 +13,9 @@
 ## 🔥 Background
 ### 🎓 History and purpose of Scala.
 
-Scala 🟥 is a general-purpose programming language that comes with support <code>functional programming</code> and strong <code>static type</code> system. The source code of Scala 🟥 is intended to be compiled into <code>Java</code> bytecode, so that the resulting executable code can be run on <code>Java virtual machine</code> (JVM).
+Scala es un lenguaje de programación de propósito general compatible con la <code>fuctional programming</code> y un sólido sistema <code>static type</code>. El código fuente de Scala está diseñado para compilarse en código de bytes de <code>Java</code>, de modo que el código ejecutable resultante pueda ejecutarse en <code>Java Virtual Machine</code>(JVM).
 
-**Martin Odersky** started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
+**Martin Odersky** empezó a diseñar Scala al rededor del 2001 en la **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
 
 ### 🗒️ IDE and text editor.
 
@@ -26,7 +26,7 @@ Scala 🟥 is a general-purpose programming language that comes with support <co
 
 ### 🪛 Installing and setting up Scala.
 
-Before starting, I share with you that the configuration I am going to use is:
+Antes de iniciar te comparto la versiones que estoy ocupando al momento de escribir este repositorio (junio 2025), mismo mes en el que se acaba de liberar <code>Spark 4.0</code>:
 
 - ☕ Java 11.0.26
 - 🟥 Scala 2.13.8
@@ -43,11 +43,14 @@ bash
 lscpu
 ```
 
-At first, check whether Java is already installed:
+Primero, validamos si Java esta instalado en nuestro sistema:
  
- <code>$ java -version</code>
+ bash
+ ```
+ java -version
+ ```
  
-If it returns <code>The program java cannot be found in the following packages</code>, Java ☕ hasn't been installed yet. Then you would like to execute the following command to get rid of:
+Si nos responde <code>The program java cannot be found in the following packages</code>, quiere decir que Java aún no está instalado. Entonces te invito a ejecutar los siguientes comandos:
 
 bash
 ```
@@ -56,15 +59,15 @@ sudo apt install openjdk-11-jdk
 java --version
 ```
 
-After installing, don't forget to set the Java home environmental variable. Just apply the following commands:
+Tras la instalación, no olvides configurar la variable de entorno <code>JAVA_HOME</code>. Simplemente aplica los siguientes comandos:
 
 <code>$ ls /usr/lib/jvm/ </code>
 
-You should see something like:
+Deberías ver algo similar a lo siguiente 👇🏼:
 
 <code>java-11-openjdk-amd64</code>
 
-Ahora editamos el fichero <code>.bashrc</code> o el fichero <code>.profile</code>
+Ahora editamos el fichero <code>~/.bashrc</code> o el fichero <code>.profile</code>
 
 Al final del fichero escribimos:
 ```
@@ -144,7 +147,7 @@ Validar que tengas instalado <code>sdk</code>, <code>coursier</code>, <code>curl
 
 bash
 ```
-sdk version      # Para ver si tienes SDKMAN!
+sdk version      	# Para ver si tienes SDKMAN!
 coursier --version   # Para Coursier CLI
 curl --version       # Para curl
 wget --version       # Para wget
@@ -373,7 +376,7 @@ Escribo otro caso de singlenton 👇🏼 para Java:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/Connection_java.png)
 
-### 🚀 Objectos (Scala) en vez de métodos estáticos (Java).
+### 🚀 Object (singlenton) en vez de métodos estáticos en Java.
 
 En Scala no existe el método estático, lo que hacemos es definir un <code>object</code>, es decir, un singlenton y dentro del él definimos las funciones (que son los equivalentes a los métodos estáticos en Java), en el siguiente ejemplo se llama a los métodos <code>sum</code> y <code>main</code>.
 
@@ -388,7 +391,7 @@ También comento que en Java lo que hacemos es llamar al método sin necesidad d
 
 Los Traits en Scala son como una mezcla entre interfaces y clases abstractas de otros lenguajes. Sirven para definir métodos y propiedades que pueden ser reutilizados por otras clases u objetos. A diferencia de las clases, un Trait puede incluir tanto código implementado como métodos abstractos (sin implementación). Las clases pueden heredar de uno o más Traits usando la palabra clave <code>with</code>, lo que permite una especie de herencia múltiple flexible. Esto los hace ideales para compartir comportamiento entre clases sin necesidad de una jerarquía estricta de herencia.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/trait.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/trait_ave.png)
 
 **Otro ejemplo del uso de Trait**
 
