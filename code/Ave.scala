@@ -10,10 +10,12 @@ class Pajaro extends Volador {
 }
 
 // Uso del código
-object Main {
+object Ave {
   def main(args: Array[String]): Unit = {
     val pajaro = new Pajaro()
     println(pajaro.volar())      // Salida: Estoy volando
     println(pajaro.aterrizar())  // Salida: He aterrizado suavemente
   }
 }
+
+

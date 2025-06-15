@@ -10,20 +10,21 @@
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/index02.png)
 
-## 🎓 History and purpose of Scala.
+## 🔥 Background
+### 🎓 History and purpose of Scala.
 
 Scala 🟥 is a general-purpose programming language that comes with support <code>functional programming</code> and strong <code>static type</code> system. The source code of Scala 🟥 is intended to be compiled into <code>Java</code> bytecode, so that the resulting executable code can be run on <code>Java virtual machine</code> (JVM).
 
 **Martin Odersky** started the design of Scala 🟥 back in 2001 at the **_École Polytechnique Fédérale de Lausanne (EPFL)_**.
 
-## 🗒️ IDE and text editor.
+### 🗒️ IDE and text editor.
 
 - 🍥 nvim 11.
 - 🟧 IntelliJ IDEA 24.1
 
 ***
 
-## 🪛 Installing and setting up Scala.
+### 🪛 Installing and setting up Scala.
 
 Before starting, I share with you that the configuration I am going to use is:
 
@@ -37,7 +38,7 @@ Before starting, I share with you that the configuration I am going to use is:
 
 ¿Que arquitectura tengo?
 
-Bash
+bash
 ```
 lscpu
 ```
@@ -48,7 +49,7 @@ At first, check whether Java is already installed:
  
 If it returns <code>The program java cannot be found in the following packages</code>, Java ☕ hasn't been installed yet. Then you would like to execute the following command to get rid of:
 
-Bash
+bash
 ```
 sudo apt update
 sudo apt install openjdk-11-jdk
@@ -73,7 +74,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 Para que los cambios en el fichero <code>~/.bashrc</code> sean permanentes, escribimos:
 
-Bash
+bash
 ```
 source ~/.bashrc
 ```
@@ -103,22 +104,21 @@ OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
 
 ⛏️ Identifica el paquete instalado.
 
-Bash
+bash
 ```
 dpkg --list | grep instalado
 ```
 
 🔩 Desistalamos el paquete, eliminamos los archivos de configuración, limpar paquetes residuales
 
-Bash
+bash
 ```
 sudo apt remove <java_version>
 sudo apt purge <java_version>
 sudo apt autoremove <java_version>
 ```
 
-🐸 Validar que Java está desistalado:
-
+**🐸 Validar que Java está desistalado**:
 
 Bash
 ```
@@ -127,7 +127,7 @@ java --version
 
 📌 Comentar o eliminar los <code>export PATH</code> dentro del fichero <code>.bashrc</code>
 
-🍑 Validar que el <code>PATH</code> se elimino correctamente:
+**🍑 Validar que el <code>PATH</code> se elimino correctamente**:
 
 Bash
 ```
@@ -142,7 +142,7 @@ echo $JAVA_HOME
 
 Validar que tengas instalado <code>sdk</code>, <code>coursier</code>, <code>curl</code>, <code>wget</code>.
 
-Bash
+bash
 ```
 sdk version      # Para ver si tienes SDKMAN!
 coursier --version   # Para Coursier CLI
@@ -167,44 +167,45 @@ If Scala 🟥 is already installed on your system, you should get the following 
 
 - Tener instalado JRE (Java Run Time Environment) o JDK (Java Development Kit).
 
+bash
 ```
 java --version
 ```
 
 Mostrar la ruta del ejecutable:
 
-Bash
+bash
 ```
 update-alternatives --config java
 ```
 
-📥 Paso 1: Descarga Scala desde scala-lang.org
+**📥 Paso 1**: Descarga Scala desde scala-lang.org
 
 Regresando a la página oficial <a href="https://www.scala-lang.org/" target="_blank" rel="noopener noreferrer">Scala</a>. En este caso descargamos la versión 2.13.16 
 
 Seleccionamos el fichero <code>scala-2.13.16.tgz</code>
 
-🗃️ Paso 2: Descomprime el archivo .tgz
+**🗃️ Paso 2**: Descomprime el archivo .tgz
 
 Crea una carpeta donde quieras instalar Scala. Por ejemplo:
 
-Bash
+bash
 ```
 sudo mkdir -p /usr/local/scala
 ```
 
 Descomprime ahí el archivo:
 
-Bash
+bash
 ```
 sudo tar -xvf scala-2.13.16.tgz -C /usr/local/scala --strip-components=1
 ```
 
-🛠️ Paso 3: Configura las variables de entorno.
+**🛠️ Paso 3**: Configura las variables de entorno.
 
 Edita el archivo ~/.bashrc o ~/.zshrc dependiendo de tu shell. 
 
-Bash
+bash
 ```
 nvim ~/.bashrc
 ```
@@ -216,7 +217,7 @@ export SCALA_HOME=/usr/local/scala
 export PATH=$PATH:$SCALA_HOME/bin
 ```
 
-🔁 Paso 4: Aplica los cambios
+**🔁 Paso 4**: Aplica los cambios
 
 Bash
 ```
@@ -225,12 +226,12 @@ source ~/.bashrc
 
 Validar la ubicación del PATH:
 
-Bash
+bash
 ```
 echo $SCALA_HOME
 ```
 
-✅ Paso 5: Verifica la instalación
+**✅ Paso 5**: Verifica la instalación
 
 Bash
 ```
@@ -306,9 +307,9 @@ Con SDKMAN puedes tener instalado Scala 2.12, 2.13 y 3.x al mismo tiempo y cambi
 
 ### ⭐ Install Spark 3.5.1
 
-
-
 ***
+
+## Capitulo 1. Introducción a Scala.
 
 ### ✨ Operators as methods.
 
@@ -351,7 +352,7 @@ val result = sum2(5)
 
 ### 🧵 Constructor in Scala.
 
-Hago un constraste de como se escribe una clase en Java y en Scala:
+Comparemos un como se declara un constuctor en Java y como en Scala , los constructores sí existen , pero tienen una sintaxis más concisa y flexible que en otros lenguajes como Java.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/constructor_java_vs_scala.png)
 
@@ -380,14 +381,20 @@ También comento que en Java lo que hacemos es llamar al método sin necesidad d
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton.png)
 
-- Insistir en que en Scala solo se ocupa crear un singlenton (un <code>object</code>) para llamar a las funciones.
+- Insistir que en Scala solo se crea un singlenton (un <code>object</code>) para llamar a las funciones sin necesidad de instanciarlas, similar a los métodos <code>static</code> de Java.
 - En los ejemplos se dan expresiones numericas particulares para ejecutar el ejercicio.
 
-### Traits ⌚7
+### 🪟 Traits
 
-Scala 🟥 provides a great functionality for you in order to extends and enrich your classes behaviors. These traits are similar to the interfaces in which you define the function prototype or signature.
+Los Traits en Scala son como una mezcla entre interfaces y clases abstractas de otros lenguajes. Sirven para definir métodos y propiedades que pueden ser reutilizados por otras clases u objetos. A diferencia de las clases, un Trait puede incluir tanto código implementado como métodos abstractos (sin implementación). Las clases pueden heredar de uno o más Traits usando la palabra clave <code>with</code>, lo que permite una especie de herencia múltiple flexible. Esto los hace ideales para compartir comportamiento entre clases sin necesidad de una jerarquía estricta de herencia.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/trait.png)
+
+**Otro ejemplo del uso de Trait**
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/log.png)
+
+
 
 ### Scala 🟥 for beginners.
 
