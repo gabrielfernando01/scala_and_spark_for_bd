@@ -391,7 +391,7 @@ También comento que en Java lo que hacemos es llamar al método sin necesidad d
 
 Los Traits en Scala son como una mezcla entre interfaces y clases abstractas de otros lenguajes. Sirven para definir métodos y propiedades que pueden ser reutilizados por otras clases u objetos. A diferencia de las clases, un Trait puede incluir tanto código implementado como métodos abstractos (sin implementación). Las clases pueden heredar de uno o más Traits usando la palabra clave <code>with</code>, lo que permite una especie de herencia múltiple flexible. Esto los hace ideales para compartir comportamiento entre clases sin necesidad de una jerarquía estricta de herencia.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/trait_ave.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/Bird.png)
 
 **Otro ejemplo del uso de Trait**
 
