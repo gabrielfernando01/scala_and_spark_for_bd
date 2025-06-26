@@ -376,28 +376,21 @@ Escribo otro caso de singlenton 👇🏼 para Java:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/Connection_java.png)
 
-### 🚀 Object (singlenton) en vez de métodos estáticos en Java.
+### 🚀 Object (singleton) en vez de métodos estáticos en Java.
 
-En Scala no existe el método estático, lo que hacemos es definir un <code>object</code>, es decir, un singlenton y dentro del él definimos las funciones (que son los equivalentes a los métodos estáticos en Java), en el siguiente ejemplo se llama a los métodos <code>sum</code> y <code>main</code>.
-
-También comento que en Java lo que hacemos es llamar al método sin necesidad de crear un objeto.
+En Scala no existe el método estático, lo que hacemos es definir un <code>object</code>, es decir, un singleton y dentro del él definimos variable y funciones (que son los equivalentes a los atributos y métodos estáticos en Java), en el siguiente ejemplo se llama a los métodos <code>sum</code> y <code>main</code>.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/singlenton.png)
 
-- Insistir que en Scala solo se crea un singlenton (un <code>object</code>) para llamar a las funciones sin necesidad de instanciarlas, similar a los métodos <code>static</code> de Java.
-- En los ejemplos se dan expresiones numericas particulares para ejecutar el ejercicio.
-
 ### 🪟 Traits
 
-Los Traits en Scala son como una mezcla entre interfaces y clases abstractas de otros lenguajes. Sirven para definir métodos y propiedades que pueden ser reutilizados por otras clases u objetos. A diferencia de las clases, un Trait puede incluir tanto código implementado como métodos abstractos (sin implementación). Las clases pueden heredar de uno o más Traits usando la palabra clave <code>with</code>, lo que permite una especie de herencia múltiple flexible. Esto los hace ideales para compartir comportamiento entre clases sin necesidad de una jerarquía estricta de herencia.
+Los Traits en Scala son una mezcla entre interfaces y clases abstractas de otros lenguajes. Sirven para definir métodos y propiedades que pueden ser reutilizados por otras clases u objetos. A diferencia de las clases, un Trait puede incluir tanto código implementado como métodos abstractos (sin implementación). Las clases pueden heredar de uno o más Traits usando la palabra clave <code>with</code>, lo que permite una especie de herencia múltiple flexible. Esto los hace ideales para compartir comportamiento entre clases sin necesidad de una jerarquía estricta de herencia.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/Bird.png)
 
 **Otro ejemplo del uso de Trait**
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/log.png)
-
-
 
 ### Scala 🟥 for beginners.
 
