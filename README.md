@@ -11,7 +11,7 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala_and_spark_for_bd/main/image/index02.png)
 
 ## 🔥 Background
-### 🎓 History and purpose of Scala.
+### ☀️ History and purpose of Scala.
 
 Scala es un lenguaje de programación de propósito general compatible con la <code>fuctional programming</code> y un sólido sistema <code>static type</code>. El código fuente de Scala está diseñado para compilarse en código de bytes de <code>Java</code>, de modo que el código ejecutable resultante pueda ejecutarse en <code>Java Virtual Machine</code>(JVM).
 
@@ -20,7 +20,7 @@ Scala es un lenguaje de programación de propósito general compatible con la <c
 ### 🗒️ IDE and text editor.
 
 - 🍥 nvim 11.
-- 🟧 IntelliJ IDEA 24.1
+- 🟧 IntelliJ IDEA 2025.1
 
 ***
 
@@ -28,9 +28,9 @@ Scala es un lenguaje de programación de propósito general compatible con la <c
 
 Antes de iniciar te comparto la versiones que estoy ocupando al momento de escribir este repositorio (junio 2025), mismo mes en el que se acaba de liberar <code>Spark 4.0</code>:
 
-- ☕ Java 11.0.26
-- 🟥 Scala 2.13.8
-- ⭐ Spark 3.5.1
+- ☕ Java 17.0.15
+- 🟥 Scala 2.13.16
+- ⭐ Spark 4.0.0
 
 ### 👷🏼‍♂️ Installing Java.
 
@@ -43,7 +43,7 @@ bash
 lscpu
 ```
 
-Primero, validamos si Java esta instalado en nuestro sistema:
+Validamos si Java esta instalado en nuestro sistema:
  
  bash
  ```
@@ -55,7 +55,7 @@ Si nos responde <code>The program java cannot be found in the following packages
 bash
 ```
 sudo apt update
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk
 java --version
 ```
 
@@ -63,15 +63,13 @@ Tras la instalación, no olvides configurar la variable de entorno <code>JAVA_HO
 
 <code>$ ls /usr/lib/jvm/ </code>
 
-Deberías ver algo similar a lo siguiente 👇🏼:
-
-<code>java-11-openjdk-amd64</code>
+Deberías ver algo similar a lo siguiente: <code>java-17-openjdk-amd64</code>
 
 Ahora editamos el fichero <code>~/.bashrc</code> o el fichero <code>.profile</code>
 
 Al final del fichero escribimos:
 ```
-export JAVA_HOME=/usr/lib/jvm/java-11-opengldk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
@@ -86,19 +84,21 @@ Verifica que las variables estén configuradas correctamente:
 
 <code>$ echo $JAVA_HOME</code>
 
-You should observe the following result on Terminal:
+You should observe the following result on Terminal: <code>/usr/lib/jvm/java-17-openjdk-amd64</code>
 
-<code>/usr/lib/jvm/java-11-openjdk-amd64</code>
+Ahora asegurate que efectivamente java fue instalado exitosamente:
 
-Now, let's check to make sure that Java has been installed successfully by issuing the following command:
+bash
+```
+java -version
+```
 
-<code>$ java -version</code>
-
-You will get the following output:
+Deberías de ver el siguiente output:
 
 ```
-openjdk version "11.0.26" 2025-01-25
-OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
+openjdk version "17.0.15" 2025-04-15
+OpenJDK Runtime Environment (build 17.0.15+6-Ubuntu-0ubuntu124.04)
+OpenJDK 64-Bit Server VM (build 17.0.15+6-Ubuntu-0ubuntu124.04, mixed mode, sharing)
 ```
 
 ***
@@ -147,19 +147,22 @@ Validar que tengas instalado <code>sdk</code>, <code>coursier</code>, <code>curl
 
 bash
 ```
-sdk version      	# Para ver si tienes SDKMAN!
+sdk version      # Para ver si tienes SDKMAN!
 coursier --version   # Para Coursier CLI
 curl --version       # Para curl
 wget --version       # Para wget
 ```
 
-Before starting, let's check to make sure Scala is installed properly.
- 
- <code>$ scala -version</code>
+Antes de inciar, verifica si Scala está instalado.
 
-If Scala 🟥 is already installed on your system, you should get the following message on your terminal:
+bash
+```
+scala -version
+```
 
-<code>Scala code runner version 2.13.8 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
+Si Scala esta instalado en tu sistema verás algo como esto:
+
+<code>Scala code runner version 2.13.16 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.</code>
  
  **De cuantas maneras puedo descargar Scala en mi 💻?**
  
@@ -308,7 +311,40 @@ Con SDKMAN puedes tener instalado Scala 2.12, 2.13 y 3.x al mismo tiempo y cambi
 
 ***
 
-### ⭐ Install Spark 3.5.1
+### ⭐ Install Spark 4.0.0
+
+1. Descarga la última versión de Apache Spark desde el sitio oficial:
+
+bash
+```
+wget https://downloads.apache.org/spark/spark-4.0.0/spark-4.0.0-bin-hadoop3.tgz
+```
+
+2. Descomprime el archivo:
+
+bash
+```
+tar -xzf spark-3.5.0-bin-hadoop3.tgz
+```
+
+3. Mueve el contenido descomprimido a <code>/opt/spark</code>:
+
+bash
+```
+sudo mkdir -p /opt/spark && sudo mv spark-3.5.0-bin-hadoop3/* /opt/spark/
+```
+
+4. Configura las variables de entorno en <code>~/.bashrc</code>:
+
+bash
+```
+echo 'export SPARK_HOME=/opt/spark' >> ~/.bashrc && echo 'export PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc && source ~/.bashrc
+```
+
+5. Verifica la instalación ejecutando:
+```
+spark-shell --version
+```
 
 ***
 
@@ -316,7 +352,7 @@ Con SDKMAN puedes tener instalado Scala 2.12, 2.13 y 3.x al mismo tiempo y cambi
 
 ### ✨ Operators as methods.
 
-An alternative syntax for calling a method taking a single parameter is the use of the infinix syntax.
+Una sintaxis alternativa para llamar a un método que toma un solo parámetro es el uso de la sintaxis infinix.
 
 ```
 val x = 45
@@ -325,7 +361,7 @@ val y = 75
 val add1 = x.+(y)
 ```
 
-More formally, the same can be done using the infix syntax, as follow:
+De manera más formal, se puede hacer lo mismo utilizando la sintaxis infija, de la siguiente manera:
 
 <code>val add2 = x + y</code>
 
